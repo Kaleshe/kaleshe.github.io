@@ -89,8 +89,7 @@ article {
 	width: 230px;
 	margin: 0;
 	display: inline-block;
-	padding: 10px 10px;
-	/*padding: 10px 20px 10px 80px;*/
+	padding: 10px 20px 10px 100px;
 	letter-spacing: 0.09em;
 	text-align: center;
 	margin-top: 10px;
@@ -120,6 +119,6 @@ article {
   visibility: hidden;
 }
 
-@media (min-width: 618px) {
+@media (min-width: 700px) {
 
 }
