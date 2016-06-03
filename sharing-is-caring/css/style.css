@@ -98,7 +98,7 @@ article {
 	}
 
 #secondbg {
-	background-color: #c9d3d2;
+	background-color: #e2e2e2;
 	max-width: 100%;
 }
 
@@ -112,4 +112,11 @@ article {
 
 #second {
 	
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
 }
