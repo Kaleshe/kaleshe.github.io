@@ -85,17 +85,6 @@ article {
 	}
 
 /* Content */
-	
-.content {
-	margin: auto;
-	width: 90%;
-	height: 900px;
-	
-}
-
-.content p {
-	float: left;
-}
 
 #dad {
 	background-color: #b6bfce;
