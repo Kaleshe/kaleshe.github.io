@@ -1,6 +1,6 @@
 body {
 	margin: auto 0;
-	font-family: verdana;
+	font-family: 'Montserrat', sans-serif;
 	max-width: 100%;
 }
 
@@ -11,7 +11,7 @@ body {
 /* Navigation */
 
 nav ul {
-	background-color: #0a178c;
+	background-color: #05167a;
 	list-style-type: none;
 	position: fixed;
 	top: 0;
@@ -19,6 +19,7 @@ nav ul {
 	margin: 0;
 	padding: 18px 0 18px 0;
 	overflow: hidden;
+	letter-spacing: 0.2em;
 }
 
 nav li {
@@ -47,6 +48,10 @@ header {
 	height: 1080px;
 	position: relative;
 	z-index: -1;
+}
+
+.content {
+	height: 1080px;
 }
 
 #title {
@@ -82,12 +87,12 @@ article {
 	display: inline-block;
 	padding: 10px 20px 10px 80px;
 	text-align: right;
+	letter-spacing: 0.09em;
 	}
 
 /* Content */
 
 #dad {
-	background-color: #b6bfce;
+	background-color: #c9d3d2;
 	width: 100%;
-	overflow: hidden;
 }
