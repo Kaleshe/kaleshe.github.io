@@ -86,15 +86,14 @@ article {
 .banner {
 	background-color: #000e2d;
 	color: #fff;
-	width: 100%;
-	width: 300px;
+	width: 230px;
 	margin: 0;
 	display: inline-block;
-	padding: 10px 20px 10px 80px;
-	text-align: right;
+	padding: 10px 10px;
+	/*padding: 10px 20px 10px 80px;*/
 	letter-spacing: 0.09em;
-	position: relative;
-	right: 72px;
+	text-align: center;
+	margin-top: 10px;
 	}
 
 #secondbg {
@@ -121,6 +120,6 @@ article {
   visibility: hidden;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 618px) {
 
 }
