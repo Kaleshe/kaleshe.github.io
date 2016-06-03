@@ -1,19 +1,11 @@
 body {
-	margin: auto;
+	margin: auto 0;
 	font-family: verdana;
-	font-size: 15pt;
 	max-width: 100%;
+	font-size: 1.1em;
 }
 
-nav {
-	margin-top: 100px;
-	z-index: 3;
-	word-spacing: 3px;
-}
-
-#tag {
-		width: 100%;
-}
+/* Navigation */
 
 nav ul {
 	background-color: #0a178c;
@@ -21,15 +13,14 @@ nav ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	margin: 0px;
-	padding: 40px;
-	font-size: 15pt;
+	margin: 0;
+	padding: 18px 0 18px 0;
+	overflow: hidden;
 }
 
 nav li {
-	display: inline;
-	float: left;
 	margin: 0 50px 0 50px;
+	float: left;
 }
 
 nav li a {
@@ -37,7 +28,11 @@ nav li a {
 	padding: 10px;
 	text-decoration: none;
 	display: block;
+	text-align: center;
+	display: block;
 }
+
+/* Header */
 
 header {
 	background: url("../images/jumbotronimg.jpg") no-repeat center center fixed; 
@@ -51,25 +46,16 @@ header {
 	z-index: -1;
 }
 
-header h1 {
-	position: relative;
-	top: 330px;
-	font-size: 100pt;
-	left: 300px;	
-}
-
 #quote {
 	color: #fff;
 	font-style: italic;
-	position: relative;
-	top: 240px;
-	left: 700px;
-	font-size: 25pt;
 	font-weight: lighter;
 	text-shadow: 1px 1px #5b5b5b;
 }
 
-.sub {
+/* Banner */
+
+.banner {
 	background-color: #000e2d;
 	color: #fff;
 	width: 100%;
@@ -80,6 +66,8 @@ header h1 {
 	text-align: right;
 	}
 
+/* Content */
+	
 .content {
 	margin: auto;
 	width: 90%;
@@ -95,8 +83,4 @@ header h1 {
 	background-color: #b6bfce;
 	width: 100%;
 	overflow: hidden;
-}
-
-h2 {
-	font-size: 30px;
 }
