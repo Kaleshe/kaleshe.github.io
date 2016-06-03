@@ -19,7 +19,8 @@ nav ul {
 	margin: 0;
 	padding: 18px 0 18px 0;
 	overflow: hidden;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.1em;
+	z-index: 3;
 }
 
 nav li {
@@ -52,6 +53,9 @@ header {
 
 .content {
 	height: 1080px;
+	width: 1560px;
+	margin: auto;
+	line-height: 1.5em;
 }
 
 #title {
@@ -88,11 +92,10 @@ article {
 	padding: 10px 20px 10px 80px;
 	text-align: right;
 	letter-spacing: 0.09em;
+	position: relative;
+	right: 72px;
 	}
 
-/* Content */
-
-#dad {
+#secondbg {
 	background-color: #c9d3d2;
-	width: 100%;
 }
