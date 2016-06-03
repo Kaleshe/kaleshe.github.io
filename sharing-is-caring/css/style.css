@@ -2,6 +2,9 @@ body {
 	margin: auto 0;
 	font-family: verdana;
 	max-width: 100%;
+}
+
+.content, nav {
 	font-size: 1.1em;
 }
 
@@ -46,11 +49,26 @@ header {
 	z-index: -1;
 }
 
+#title {
+	font-size: 9em;
+}
+
 #quote {
 	color: #fff;
 	font-style: italic;
 	font-weight: lighter;
-	text-shadow: 1px 1px #5b5b5b;
+	text-shadow: 1px 1px 1px #5b5b5b;
+	font-size: 2em;
+	position: relative;
+	bottom: 150px;
+	float: right;
+}
+
+article {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /* Banner */
