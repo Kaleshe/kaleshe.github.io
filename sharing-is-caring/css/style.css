@@ -194,11 +194,15 @@ footer {
 	.content {
 		padding: 0;
 		margin: 20px;
-		width: 100%;
+		width: 95%;
 	}	
 	
 	header {
 		height: 400px;
+	}
+	
+	blockquote {
+		display: none;
 	}
 }
 
