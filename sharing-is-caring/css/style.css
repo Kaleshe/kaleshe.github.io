@@ -2,7 +2,6 @@ body {
 	margin: auto 0;
 	font-family: 'Montserrat', sans-serif;
 	max-width: 100%;
-	min-width: 450px;
 }
 
 #container {
@@ -65,7 +64,6 @@ header {
 	-o-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	height: 1000px;
 	position: relative;
 }
 
@@ -116,17 +114,22 @@ blockquote {
 
 /* Content */
 
-
+section.first {
+	clear: both;
+}
 section.first ul{
 	margin: 50px 0 20px 0;
 }
 
 .content {
-	height: 1000px;
 	width: 52%;
 	margin: auto;
 	line-height: 1.5em;
 	padding-top: 100px;
+}
+
+.content.first {
+	padding-top: 200px;
 }
 
 .content h2 {
