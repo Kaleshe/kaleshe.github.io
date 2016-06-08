@@ -162,13 +162,22 @@ footer {
 
 /*  Menu Break */
 @media screen and (max-width:1065px) {
-
 	nav li {
 		float: none;
+		text-align: center;
 	}
 	
 	nav ul{
 		background-color: rgba(5, 22, 122, 0.8);
+	}
+	
+	.content {
+		padding: 0;
+		padding-bottom: 20px;
+	}
+	
+	.content.first {
+		padding-bottom: 150px;
 	}
 }
 
