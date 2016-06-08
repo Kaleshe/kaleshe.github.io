@@ -2,9 +2,15 @@ body {
 	margin: auto 0;
 	font-family: 'Montserrat', sans-serif;
 	max-width: 100%;
+	min-width: 450px;
+}
+
+#container {
+	max-width: 100%;
 }
 
 /* Navigation */
+
 
 nav ul {
 	background-color: #05167a;
@@ -17,7 +23,6 @@ nav ul {
 	overflow: hidden;
 	letter-spacing: 0.1em;
 	z-index: 3;
-	display:
 }
 
 nav li {
@@ -31,6 +36,7 @@ nav li a {
 	text-decoration: none;
 	text-align: center;
 	display: block;
+	transition: all 0.2s ease-out;
 }
 
 nav a:active {
@@ -38,16 +44,22 @@ nav a:active {
 }
 
 nav a:hover {
-	color: #e5e5e5;
+	color: rgba(255, 255, 255, 0.5); 
 }
 
 nav a:visited{
 	
 }
+
+.list-wrap ul{
+	display: inline-block;		
+}
+
 /* Header */
 
-#fold {
-	background: url("../images/jumbotronimg.jpg") no-repeat center center fixed; 
+
+header {
+	background: url("../images/headerbg.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -55,34 +67,34 @@ nav a:visited{
 	width: 100%;
 	height: 1000px;
 	position: relative;
-	z-index: -1;
 }
 
-#title {
+blockquote h1 {
 	font-size: 9em;
 }
 
-#quote {
+blockquote p {
 	color: #fff;
 	font-style: italic;
 	font-weight: lighter;
 	text-shadow: 1px 1px 1px #5b5b5b;
 	font-size: 2em;
-	position: relative;
-	bottom: 150px;
-	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
-article {
+blockquote {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-/* Banner */
+/* Sub Heading */
 
-.banner {
+
+.sub-heading {
 	background-color: #000e2d;
 	color: #fff;
 	width: 500px;
@@ -94,30 +106,35 @@ article {
 	margin-top: 10px;
 	}
 
+/* Second Background Colour */	
+	
+	
 .full-width-bg {
 	background-color: #e2e2e2;
-	display: block;
+	position: relative;
+}
+
+/* Content */
+
+
+section.first ul{
+	margin: 50px 0 20px 0;
 }
 
 .content {
 	height: 1000px;
-	max-width: 1160px;
+	width: 52%;
 	margin: auto;
 	line-height: 1.5em;
 	padding-top: 100px;
 }
 
-.content, nav {
-	font-size: 1.1em;
-}
-
-.content p {
-	margin: 0.5em;
-}
-
 .content h2 {
 	font-size: 2em;
 }
+
+/* Anchor */
+
 
 .anchor{
   display: block;
@@ -126,111 +143,60 @@ article {
   visibility: hidden;
 }
 
-.list-wrap ul{
-	display: inline-block;		
+/* Footer */
+
+footer {
+}
+
+/* Display on different devices */
+
+
+/* Menu Break */
+@media screen and (max-width:1060px) {
+	nav ul {
+		margin: 0;
+		padding: 18px 0 18px 0;
+		display: block;
+	}
+
+	nav li {
+		margin: 0 10px 0 10px;
+	}
+	
+	blockquote h1 {
+		font-size: 6em;
+	}
+	
+	blockquote p {
+		font-size: 1.5em;
+		top: 160px;
+		right: -10px;
+	}
+}
+
+/* Blockquote */
+@media screen and (max-width:1492px) {
+	section.first ul {
+		margin: 0;
+	}
+	
+	.list-wrap {
+		margin: 30px;
+	}
+}
+
+/* Text break */
+@media screen and (max-width:947px) {
+	.sub-heading {
+		width: 70%;
+	}
+	
+	.content {
+		padding: 0;
+		margin: 20px;
+		width: 100%;
+	}	
 }
 
 
-/* Smartphones (portrait and landscape) ----------- */
-2
-@media only screen
-3
-and (min-device-width : 320px)
-4
-and (max-device-width : 480px) {
-5
-/* Styles */
-6
-}
-7
-/* Smartphones (landscape) ----------- */
-8
-@media only screen
-9
-and (min-width : 321px) {
-10
-/* Styles */
-11
-}
-12
-/* Smartphones (portrait) ----------- */
-13
-@media only screen
-14
-and (max-width : 320px) {
-15
-/* Styles */
-16
-}
-17
-/* iPads (portrait and landscape) ----------- */
-18
-@media only screen
-19
-and (min-device-width : 768px)
-20
-and (max-device-width : 1024px) {
-21
-/* Styles */
-22
-}
-23
-/* iPads (landscape) ----------- */
-24
-@media only screen
-25
-and (min-device-width : 768px)
-26
-and (max-device-width : 1024px)
-27
-and (orientation : landscape) {
-28
-/* Styles */
-29
-}
-30
-/* iPads (portrait) ----------- */
-31
-@media only screen
-32
-and (min-device-width : 768px)
-33
-and (max-device-width : 1024px)
-34
-and (orientation : portrait) {
-35
-/* Styles */
-36
-}
-37
-/* Desktops and laptops ----------- */
-38
-@media only screen
-39
-and (min-width : 1224px) {
-40
-/* Styles */
-41
-}
-42
-/* Large screens ----------- */
-43
-@media only screen
-44
-and (min-width : 1824px) {
-45
-/* Styles */
-46
-}
-47
-/* iPhone 4 ----------- */
-48
-@media
-49
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-50
-only screen and (min-device-pixel-ratio : 1.5) {
-51
-/* Styles */
-52
-}
+
