@@ -196,6 +196,10 @@ footer {
 		margin: 20px;
 		width: 100%;
 	}	
+	
+	header {
+		height: 400px;
+	}
 }
 
 
