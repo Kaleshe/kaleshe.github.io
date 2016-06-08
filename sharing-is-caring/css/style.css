@@ -65,10 +65,14 @@ header {
 	background-size: cover;
 	width: 100%;
 	position: relative;
+	height: 1000px;
 }
 
 blockquote h1 {
+	position: absolute;
 	font-size: 9em;
+	right: 0;
+	bottom: 0;
 }
 
 blockquote p {
@@ -78,8 +82,8 @@ blockquote p {
 	text-shadow: 1px 1px 1px #5b5b5b;
 	font-size: 2em;
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	left: 200px;
+	top: 0;
 }
 
 blockquote {
@@ -114,9 +118,6 @@ blockquote {
 
 /* Content */
 
-section.first {
-	clear: both;
-}
 section.first ul{
 	margin: 50px 0 20px 0;
 }
@@ -126,14 +127,19 @@ section.first ul{
 	margin: auto;
 	line-height: 1.5em;
 	padding-top: 100px;
+	padding: 0 0 300px 0;
 }
 
 .content.first {
-	padding-top: 200px;
+	padding-top: 100px;
 }
 
 .content h2 {
 	font-size: 2em;
+}
+
+.content.third {
+	padding-top: 100px;
 }
 
 /* Anchor */
@@ -154,60 +160,33 @@ footer {
 /* Display on different devices */
 
 
-/* Menu Break */
-@media screen and (max-width:1060px) {
-	nav ul {
-		margin: 0;
-		padding: 18px 0 18px 0;
-		display: block;
-	}
-
-	nav li {
-		margin: 0 10px 0 10px;
-	}
+/*  Menu Break */
+@media screen and (max-width:1065px) {
 	
-	blockquote h1 {
-		font-size: 6em;
-	}
-	
-	blockquote p {
-		font-size: 1.5em;
-		top: 160px;
-		right: -10px;
-	}
 }
 
-/* Blockquote */
-@media screen and (max-width:1492px) {
-	section.first ul {
+@media screen and (max-width:1495px) {
+	section.content.first ul {
 		margin: 0;
 	}
 	
 	.list-wrap {
 		margin: 30px;
 	}
-}
 
-/* Text break */
-@media screen and (max-width:947px) {
-	.sub-heading {
+	.content {
 		width: 70%;
 	}
 	
-	.content {
-		padding: 0;
-		margin: 20px;
-		width: 95%;
-	}	
-	
-	header {
-		height: 400px;
+	.sub-heading {
+		width: 70%;
 	}
-	
+
 	blockquote {
 		display: none;
 	}
+	
+	header {
+		height: 500px;
+	}
 }
-
-
-
