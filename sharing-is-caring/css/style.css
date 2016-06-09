@@ -10,8 +10,39 @@ body {
 
 /* Navigation */
 
+/* Mobile */
+.mnav {
+	display: none;
+}
 
-nav ul {
+.mnav ul {
+		background-color: rgba(5, 22, 122, 0.8);
+		width: 200px;
+		margin: 0 0 0 150px;
+		padding: 0;
+}
+
+.mnav li {
+		float: none;
+		text-align: center;
+		margin: 0;
+}
+
+.mnav li a {
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	transition: all 0.2s ease-out;
+}
+
+.dropdown {
+	display: none;
+}
+
+/* Desktop */
+nav ul, .dropdown {
 	background-color: rgba(5, 22, 122, 1);
 	list-style-type: none;
 	position: fixed;
@@ -42,7 +73,7 @@ nav a:active {
 	
 }
 
-nav a:hover {
+nav a:hover, .mnav a:hover {
 	color: rgba(255, 255, 255, 0.5); 
 }
 
@@ -162,15 +193,42 @@ footer {
 
 /*  Menu Break */
 @media screen and (max-width:1065px) {
-	nav li {
+	/*nav li {
 		float: none;
 		text-align: center;
+		margin: 0;
 	}
 	
 	nav ul{
 		background-color: rgba(5, 22, 122, 0.8);
+		width: 200px;
+		margin: 0 0 0 150px;
+		padding: 0;
+
+	}
+	HIDDEN NAV FOR TEST */
+	
+	nav { 
+		display: none;
 	}
 	
+	.dropdown {
+		display: block;
+	}
+	
+	.dropdown a{
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	.dropdown ul {
+		list-style-type: none;
+	}
+	
+	.dropdown > ul> li:hover > .mnav {
+		display: block;
+		background-color: rgba{5, 22, 122, 0.8);
+	}
 	.content {
 		padding: 0;
 		padding-bottom: 20px;
