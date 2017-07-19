@@ -1,9 +1,14 @@
 body {
-	margin: auto 0;
+	margin: 0 auto;
 	font-family: 'Montserrat', sans-serif;
 	max-width: 100%;
 }
 
+img {
+	display: block;
+	margin: 0 auto;
+	}
+	
 #container {
 	max-width: 100%;
 }
@@ -43,7 +48,7 @@ body {
 
 /* Desktop */
 nav ul, .dropdown {
-	background-color: 26487F;
+	background-color: #26487F;
 	list-style-type: none;
 	position: fixed;
 	top: 0;
@@ -121,7 +126,7 @@ blockquote {
 	}
 
 .banner {
-	background-color: #00317F;
+	background-color: #070D17;
 	color: #fff;
 	margin-top: 10px;
 	display: inline-block;
@@ -174,7 +179,15 @@ section.first ul{
 /* Footer */
 
 footer {
+	background-color: #070D17;
+	color: #fff;
+	width: 100%;
+	padding: 5px 0 5px 0;
+}
+
+footer p {
 	margin: 20px;
+	font-size: 0.8em;
 }
 
 /* Display on different devices */
