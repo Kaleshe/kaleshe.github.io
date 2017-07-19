@@ -16,7 +16,7 @@ body {
 }
 
 .mnav ul {
-		background-color: rgba(5, 22, 122, 0.8);
+		background-color: red;
 		width: 200px;
 		margin: 0 0 0 150px;
 		padding: 0;
@@ -43,7 +43,7 @@ body {
 
 /* Desktop */
 nav ul, .dropdown {
-	background-color: rgba(5, 22, 122, 1);
+	background-color: 26487F;
 	list-style-type: none;
 	position: fixed;
 	top: 0;
@@ -74,7 +74,7 @@ nav a:active {
 }
 
 nav a:hover, .mnav a:hover {
-	color: rgba(255, 255, 255, 0.5); 
+	color: #FFC633; 
 }
 
 nav a:visited{
@@ -89,7 +89,7 @@ nav a:visited{
 
 
 header {
-	background: url("../images/headerbg.jpg") no-repeat center center fixed; 
+	background: url("../images/headerbg1.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -121,7 +121,7 @@ blockquote {
 	}
 
 .banner {
-	background-color: #000e2d;
+	background-color: #00317F;
 	color: #fff;
 	margin-top: 10px;
 	display: inline-block;
@@ -182,20 +182,6 @@ footer {
 
 /*  Menu Break */
 @media screen and (max-width:1065px) {
-	/*nav li {
-		float: none;
-		text-align: center;
-		margin: 0;
-	}
-	
-	nav ul{
-		background-color: rgba(5, 22, 122, 0.8);
-		width: 200px;
-		margin: 0 0 0 150px;
-		padding: 0;
-
-	}
-	HIDDEN NAV FOR TEST */
 	
 	nav { 
 		display: none;
@@ -256,8 +242,7 @@ footer {
 	}
 	
 	header {
-		height: 300px;
-		background-image: url("../images/headerbgsmall.jpg");
+		height: 150px;
 
 	}
 	
