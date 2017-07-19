@@ -96,25 +96,14 @@ header {
 	background-size: cover;
 	width: 100%;
 	position: relative;
-	height: 1000px;
+	height: 820px;
 }
 
-blockquote h1 {
-	position: absolute;
-	font-size: 3em;
-	right: 0;
-	bottom: 0;
-}
-
-blockquote p {
+blockquote section{
 	color: #fff;
-	font-style: italic;
 	font-weight: lighter;
 	text-shadow: 1px 1px 1px #5b5b5b;
-	font-size: 2em;
-	position: absolute;
-	left: 200px;
-	top: 0;
+	font-size: 1.5em;
 }
 
 blockquote {
@@ -267,7 +256,7 @@ footer {
 	}
 	
 	header {
-		height: 400px;
+		height: 300px;
 		background-image: url("../images/headerbgsmall.jpg");
 
 	}
