@@ -2,33 +2,19 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
   max-width: 900px;
-  background-color: #99ff33;
+  background-color: #f28907;
 }
 
-.container h1 {
+.container h2 {
   text-align: center;  
-  font-size: 38px;
-  font-weight: 800;
-}
-
-
-.container h3 {
-  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .container {
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 1px;
-  padding-bottom: 40px;
-  background-color: #fff;
   max-width: 800px;
   min-width: 210px;
-  border-radius: 2em;
-  box-shadow: 0 0 30px #73e600;
+  border-radius: 0.5em;
 } 
 
 ul {
@@ -36,8 +22,7 @@ ul {
 }
 
 p img {
-  max-width: 100%; 
-  
+  max-width: 100%;   
 }
 
 a {
