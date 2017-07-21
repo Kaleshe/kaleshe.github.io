@@ -7,46 +7,41 @@
   <title>Kaleshe</title>
   <style>
 body {
-    	margin: 20px auto;
+    margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #E6E6E6;
-	letter-spacing: 0.2em;
+	background-image: url("school.png");
+	background-repeat: repeat;
 	width: 700px;
 	min-width: 312px;
 	font-size: 1em;
+	text-align: center;
 }
-
-#container {
-	background-color: #FF8FE3;
-	border-radius: 40px;
-	padding: 50px;
-}
-
 ul li {
 	list-style-type: none;
+	margin: 10px;
 }
 
 li a {
 	text-decoration: none;
-	color: rgb(255, 255, 255);
+	color: #000;
+	background-color: #FFF;
+	padding: 2.5px;
 }
 
 li a:hover {
-	color: rgba(255, 255, 255, 0.5);
+	color: brown;
 }
 
 h1 {
 	text-transform: uppercase;
-	text-align: center;
 	font-size: 2.5em;
 }
 
-h2 {
-	font-size: 2em;
-}
-
 footer p {
-	float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+	margin: 10px
 }
 
 @media screen and (max-width: 715px) {
@@ -58,10 +53,6 @@ footer p {
 		font-size: 1.5em;
 	}
 	
-	h2 {
-		font-size: 1em;
-	}
-	
 	li a, em, footer p {
 		font-size: 0.8em;
 	}
@@ -71,20 +62,22 @@ footer p {
 </head>
 <body>
 	<div id="container">
-		<h1>University Projects</h1>
-			<h2>Term 1</h2>
+		
 		<ul>
+				<li><h1>University Projects</h1></li>
+				<li><h2>Term 1</h2></li>
 				<li><a href="/recipe" target="_blank">Recipe</a></li>
 		</ul>
 
-			<h2>Term 2</h2>
 		<ul>
+				<li><h2>Term 2</h2></li>
 				<li><a href="/intro" target="_blank">Introduction</a><li>
 				<li><a href="/sharing-is-caring" target="_blank">Sharing is Caring</a><li>
 		</ul>
-			<h2>Graphics</h2>
+			
 		<ul>
-				<li><a href="graphics.htm"> here </a> </li>
+				<li><h2>Graphics</h2></li>
+				<li><a href="graphics.htm"> Click Here </a> </li>
 		</ul>
 		</div>
 		<footer>
