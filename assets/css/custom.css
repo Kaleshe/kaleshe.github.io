@@ -128,10 +128,8 @@ header {
 
 .card {
 	min-width: 110px;
-	max-width: 250px;
-	margin-bottom: 2px;
-	padding-bottom: 0;
-	padding: 1%;
+	max-width: 100%;
+	margin: 10px;
 }
 
 
