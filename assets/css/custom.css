@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .carousel .item {
-  height: 80vh;
+  height: 82vh;
 }
 
 header { 
@@ -238,7 +238,13 @@ article {
 	margin: 40px;
 }
 
+.image_full{
+   display:block;
+  }
 
+ .image_mobile{
+  display:none;
+ }
 
 
 @media only screen and (max-width: 768px) {
@@ -251,7 +257,11 @@ article {
 	}
 	
 	.carousel .item {
-	height: 30vh;
+		height: 40vh;
+	}
+	
+	.item img {
+		top: -250px;
 	}
 	
 	.card {
@@ -279,4 +289,13 @@ article {
 	h1 {
 		font-size: 1.5em;
 	}
+	
+	.image_full{
+	   display:none;
+	}
+
+	.image_mobile{
+	   display:block;
+	}
+
 }
