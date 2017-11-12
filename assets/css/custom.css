@@ -281,6 +281,10 @@ article {
 	   margin: 0 auto;
 	}
 	
+	.sponsors {
+		width: 100%;
+	}
+	
 	.sponsors img {
 		width: 100%;
 	}
