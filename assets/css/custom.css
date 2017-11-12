@@ -3,6 +3,7 @@
 html, body {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
+  font-size: 17px;
 }
 
 /* Global */
@@ -111,7 +112,7 @@ header {
 	height: 30vh;
 }
 
-.coming-soon h2 {
+.coming-soon h1 {
 	margin: 0 auto;
 	color: white;
 }
@@ -150,7 +151,6 @@ header {
 	margin: 0 auto;
 	padding: 10px;
 	max-width: 70%;
-	font-size: 1.3em;
 }
 
 /* Rows */
@@ -167,6 +167,7 @@ header {
 }
 
 .sponsors {
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -273,18 +274,6 @@ article {
 		display: none;
 	}
 	
-	.coming-soon {
-		font-size: 0.5em;
-	}
-	
-	.info p {
-		font-size: 1.2em;
-	}
-	
-	h1 {
-		font-size: 1.5em;
-	}
-	
 	.image_full{
 	   display:none;
 	}
@@ -297,10 +286,6 @@ article {
 	
 	.sponsors img {
 		width: 100%;
-	}
-	
-	button h3 {
-		font-size: 1em;
 	}
 	
 	button {
