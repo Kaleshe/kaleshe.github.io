@@ -294,5 +294,8 @@ article {
 	   width: 70%;
 	   margin: 0 auto;
 	}
-
+	
+	.sponsors img {
+		width: 100%;
+	}
 }
