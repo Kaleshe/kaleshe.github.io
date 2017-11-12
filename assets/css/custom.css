@@ -107,7 +107,6 @@ header {
 }
 
 .coming-soon {
-	background-color: rgb(105, 199, 0);
 	margin: auto;
 	height: 30vh;
 }
@@ -142,7 +141,7 @@ header {
 }
 
 .info h1 {
-	color: #00aef7;
+	color: #007bff;
 }
 
 .info p {
@@ -171,6 +170,7 @@ header {
 
 .sponsors img {
 	width: 100%;
+	padding: 20px;
 }
 
 /* Footer */
@@ -183,19 +183,18 @@ footer {
 /* PDF Programme */
 
 .programme {
-	background-color: #04a8ed;
 	text-align: center;
 }
 
 button {
 	background-color: white; 
-    color: #04a8ed; 
+    color: #007bff; 
     border: 2px solid white;
 	min-width: 100px;
 	max-width: 600px;
 	cursor: pointer;
 	border-radius: 5px;
-	margin: 50px;
+	margin: 70px;
 	-webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 	padding: 5px;
@@ -205,7 +204,7 @@ button {
 
 button:hover {
 	border: 2px solid white;
-	background-color: #04a8ed;
+	background-color: #007bff;
 	color: white;
 }
 
