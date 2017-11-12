@@ -141,7 +141,7 @@ header {
 }
 
 .info h1 {
-	color: #007bff;
+	color: #00aef7;
 }
 
 .info p {
@@ -161,6 +161,7 @@ header {
 .sponsors.info-container {
 	width: 100%;
 	color: white;
+	background-color: red;
 }
 
 .sponsors {
@@ -184,6 +185,7 @@ footer {
 
 .programme {
 	text-align: center;
+	background-color: #007bff;
 }
 
 button {
@@ -267,6 +269,8 @@ article {
 		display: none;
 	}
 	
+	
+	
 	.image_full{
 	   display:none;
 	}
@@ -287,6 +291,17 @@ article {
 		padding: 0;
 	}
 	
+	.info {
+		text-align: left;
+	}
+	
+	.info h1 {
+		text-align: center;
+	}
+	
+	.video-section {
+		display: none;
+	}
 }
 
 /* Coming soon fix */
