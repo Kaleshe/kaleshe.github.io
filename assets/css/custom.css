@@ -122,8 +122,6 @@ header {
 }
 
 .card {
-	min-width: 110px;
-	max-width: 100%;
 	margin: 10px;
 }
 
@@ -233,6 +231,7 @@ button h3 {
 }
 
 .card-body {
+	font-size: 0.8em;
 }
 
 article {
@@ -265,11 +264,6 @@ article {
 		top: -250px;
 	}
 	
-	.card {
-		width: 100%;
-		float: right;
-	}
-	
 	#associations	{
 		display: none;
 	}
@@ -293,4 +287,15 @@ article {
 		margin: 15px auto;
 		padding: 0;
 	}
+	
+}
+
+/* Coming soon fix */
+
+@media only screen and (max-width: 1000px) {
+	.center-both :first-child {
+		position: relative;
+		text-align: center;
+	}
+	
 }
