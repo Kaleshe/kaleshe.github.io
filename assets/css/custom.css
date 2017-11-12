@@ -170,8 +170,8 @@ header {
 	margin: 0 auto;
 }
 
-.sponsors .row {
-	padding: 20px;
+.sponsors img {
+	width: 100%;
 }
 
 /* Footer */
@@ -297,5 +297,15 @@ article {
 	
 	.sponsors img {
 		width: 100%;
+	}
+	
+	button h3 {
+		font-size: 1em;
+	}
+	
+	button {
+		min-width: 40px;
+		margin: 15px auto;
+		padding: 0;
 	}
 }
