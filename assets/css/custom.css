@@ -22,23 +22,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header { 
-	padding: 1.5%;
+	padding: 20px;
 }
 
-.assoc img {
-	width: 70%;
+#associations {
+	margin: 5px;
 	position: relative;
-	top: 5px;
+	top: 10px;
 }
 
-#guardian {
-	position: relative;
-	top: 9px;
-}
-
-#logo {
-	width: 80%;
-	float: right;
+.centered {
+	margin: 0 auto;
 }
 
 /* Style all font awesome icons */
@@ -117,7 +111,7 @@ header {
 	height: 30vh;
 }
 
-.coming-soon h1 {
+.coming-soon h2 {
 	margin: 0 auto;
 	color: white;
 }
@@ -265,7 +259,24 @@ article {
 		float: right;
 	}
 	
-	header img {
-		width: 100px;
+	#associations	{
+		display: none;
+	}
+	
+	#logo {
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.coming-soon {
+		font-size: 0.5em;
+	}
+	
+	.info p {
+		font-size: 1.2em;
+	}
+	
+	h1 {
+		font-size: 1.5em;
 	}
 }
