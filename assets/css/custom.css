@@ -137,8 +137,8 @@ header {
 
 .info {
 	width: 100%;
-	text-align: center;
 	padding: 100px;
+	text-align: center;
 }
 
 .info h1 {
@@ -252,7 +252,7 @@ article {
 	
 	.info {
 		padding: 0;
-		margin: 0;
+		margin: 50px 0;
 		width: 100%;
 	}
 	
