@@ -1,9 +1,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 #main {
   margin: 10px;
   line-height: 1.6em;
+  font-size: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #tribute-info {
   width: 70%;
-  margin: 5px auto;
+  margin: 50px auto;
   position: relative;
   right: 0;
 }
@@ -114,6 +116,17 @@ tr {
 @media only screen and (max-width: 768px) {
     #image {
         transform: none;
-        float: right;
+        margin: 0;
+    }
+
+    body {
+      font-size: 2em;
+    }
+
+    #img-div {
+      position: absolute;
+    }
+    #img-caption {
+      position: relative;
     }
 }
