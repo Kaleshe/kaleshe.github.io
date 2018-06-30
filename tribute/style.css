@@ -60,7 +60,6 @@ a:hover {
   margin: 60px auto;
   width: 75%;
 
-
 }
 
 table {
@@ -109,26 +108,9 @@ tr {
   height: 50px;
 }
 
+
 @media only screen and (max-width: 1072px) {
     #popular-songs, #quotes {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #image {
-        transform: none;
-        margin: 0;
-    }
-
-    body {
-      font-size: 2em;
-    }
-
-    #img-div {
-      position: absolute;
-    }
-    #img-caption {
-      position: relative;
     }
 }
