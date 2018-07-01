@@ -14,12 +14,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
-#image {
-  width: 30%;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
 #title {
   text-align: center;
   font-size: 3em;
@@ -27,7 +21,14 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+#image {
+  width: 100%;
+}
+
 #img-div {
+  width: 600px;
+  margin: 0 auto;
+
 }
 
 #img-caption {
@@ -37,9 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #tribute-info {
   width: 70%;
-  margin: 50px auto;
-  position: relative;
-  right: 0;
+  margin: 40px auto;
 }
 
 a {
@@ -109,8 +108,9 @@ tr {
 }
 
 
-@media only screen and (max-width: 1072px) {
+@media (min-width: 800px) and (max-width: 1072px) {
     #popular-songs, #quotes {
         width: 100%;
     }
+
 }
