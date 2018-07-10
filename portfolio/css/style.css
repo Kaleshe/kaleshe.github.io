@@ -157,5 +157,6 @@ h2, h4 {
 
     #about p {
       font-size: 0.75em;
+      min-width: 700px;
     }
 }
