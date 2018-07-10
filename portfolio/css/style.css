@@ -155,7 +155,7 @@ h2, h4 {
       min-height: 50vh;
     }
 
-    p {
+    #about p {
       font-size: 0.75em;
     }
 }
