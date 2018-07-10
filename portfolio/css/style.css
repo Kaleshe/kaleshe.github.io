@@ -155,8 +155,11 @@ h2, h4 {
       min-height: 50vh;
     }
 
-    #about p {
+    p {
       font-size: 0.75em;
+    }
+
+    .section-info {
       min-width: 700px;
     }
 }
