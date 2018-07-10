@@ -111,7 +111,7 @@ h2, h4 {
 
 .project-item-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 20%);
+  grid-template-columns: repeat(auto-fit, 25%);
   justify-content: center;
   grid-gap: 20px;
 }
