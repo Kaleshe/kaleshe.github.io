@@ -9,9 +9,15 @@ Light grey: #E5E5E5
 Pink: #B21645
 */
 
+
+* {
+    box-sizing: border-box;
+}
+
+}
 @keyframes hover {
   100% {
-    opacity: 0.8;
+    color: #22BF40;
   }
 }
 
@@ -50,7 +56,7 @@ header {
 nav {
   background-color: #1A8F30;
   position: absolute;
-  bottom: -64px;
+  bottom: -63px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -58,7 +64,7 @@ nav {
 
 nav ul li {
   display: inline-block;
-  margin: 5px 50px;
+  margin: 5px 3%;
 }
 
 li a {
@@ -67,12 +73,13 @@ li a {
 }
 
 li a:hover {
-  animation: hover 1s ease-in-out forwards;
+  animation: hover 1.5s ease-in-out forwards;
   cursor: pointer;
 }
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 #hero {
@@ -83,9 +90,9 @@ ul {
 }
 
 .section-first {
-  width: 1300px;
+  width: 100%;
   margin: 10px auto;
-  height: 70vh;
+  height: 65vh;
   position: relative;
 }
 
@@ -96,17 +103,16 @@ ul {
   transform: translateY(-50%);
   top: 50%;
   text-align: center;
-  padding: 50px 150px;
+  padding: 3% 7%;
   left: 0;
-  margin-left: 30px;
+  margin-left: 70px;
 }
 
 #opening-hours ul {
-  line-height: 2.5em;
+  line-height: 2.2em;
 }
 
 #opening-hours ul {
-  padding-left: 0;
   font-size: 0.9em;
 }
 
@@ -116,11 +122,12 @@ ul {
 }
 
 #intro-text {
-  width: 700px;
+  width: 60%;
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
   right: 0;
+  margin-right: 40px;
 }
 
 #intro-text p, #latest-news p {
@@ -141,12 +148,12 @@ h3, #latest-news h2 {
 
 .box {
   float: left;
-  width: 30%;
+  width: 25%;
   height: 300px;
   background-color: #252625;
   color: #FFF;
   position: relative;
-  margin: 20px;
+  padding: 15px;
 }
 
 .box-label {
@@ -156,25 +163,28 @@ h3, #latest-news h2 {
   background-color: rgba(0,0,0,0.5);
   width: 100%;
   padding: 7px 0;
+  left: 0;
 }
 
-.box-label:hover {
+.box:hover, .box-label:hover {
   animation: box-stretch 1s forwards ease-in-out;
   cursor: pointer;
 }
 
 .box-container {
-  width: 1200px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  width: 100%;
+}
+
+.box-container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .box-wrapper {
+  width: 100%;
   background-color:  #B21645;
-  height: 50vh;
-  position: relative;
+  padding: 30px;
 }
 
 #stethoscope {
@@ -192,13 +202,18 @@ h3, #latest-news h2 {
   background-size: cover;
 }
 
+#register {
+  background: url('https://cdn.pixabay.com/photo/2017/06/05/14/37/hands-2374246_1280.jpg') no-repeat;
+  background-size: cover;
+}
+
 .latest-news-wrapper{
   background-color: #F1F1F1;
 }
 
 #latest-news {
   clear: both;
-  width: 700px;
+  width: 60%;
   margin: auto;
   padding: 40px;
 }
@@ -208,4 +223,22 @@ footer {
   color: #FFF;
   text-align: center;
   padding: 15px;
+}
+
+@media only screen and (max-width: 1082px){
+  .box {width: 100%; height: 100px; padding: 0; margin: 0;}
+  .box-container {width: 80%;}
+  .box-wrapper {height: 45vh;}
+  }
+}
+
+@media only screen and (max-width: 1500px){
+  #opening-hours {
+    width: 100%;
+    position: relative;
+  }
+
+  #intro-text {
+    color: red;
+  }
 }
