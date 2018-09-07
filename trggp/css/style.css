@@ -96,8 +96,9 @@ ul {
   transform: translateY(-50%);
   top: 50%;
   text-align: center;
-  padding: 50px 120px;
+  padding: 50px 150px;
   left: 0;
+  margin-left: 30px;
 }
 
 #opening-hours ul {
@@ -115,21 +116,27 @@ ul {
 }
 
 #intro-text {
-  width: 800px;
+  width: 700px;
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
   right: 0;
 }
 
-#intro-text p {
+#intro-text p, #latest-news {
   line-height: 1.8em;
+}
+
+#intro-text p {
   margin: 30px;
 }
 
 h2 {
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+h3, #latest-news h2 {
+  color: #B21645;
 }
 
 .box {
@@ -165,7 +172,7 @@ h2 {
 }
 
 .box-wrapper {
-  background-color: #E5E5E5;
+  background-color:  #B21645;
   height: 50vh;
   position: relative;
 }
@@ -185,16 +192,15 @@ h2 {
   background-size: cover;
 }
 
+.latest-news-wrapper{
+  background-color: #E9E9E9;
+}
+
 #latest-news {
   clear: both;
   width: 700px;
   margin: auto;
-  color: #FFF;
   padding: 40px;
-}
-
-.latest-news-container {
-  background-color: #B21645;
 }
 
 footer {
