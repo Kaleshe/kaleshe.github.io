@@ -14,57 +14,59 @@ Pink: #B21645
     box-sizing: border-box;
 }
 
-}
-@keyframes hover {
-  100% {
-    color: #22BF40;
-  }
-}
-
-@keyframes box-stretch {
-  100% {
-    padding: 30px 0;
-  }
+p {
+  line-height: 1em;
 }
 
 body {
   color: #403A31;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', 'Roboto', sans-serif;
   font-size: 16px;
-}
-
-#logo {
-}
-
-#trggp-details {
-  float: right;
-  line-height: 5px;
-  font-size: 0.8em;
-}
-
-.header-info {
-  padding: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #22BF40;
   color: #FFF;
+}
+
+.top-header-wrapper {
+  padding: 40px;
+}
+
+.top-header-wrapper img {
+  display: inline;
+}
+
+#surgery-details {
+  display: inline-block;
+  float: right;
+}
+
+#surgery-details p {
+  font-size: 0.8em;
+  line-height: 1.5em;
   position: relative;
-  height: 122px;
+  top: -11px;
 }
 
 nav {
+  clear: both;
   background-color: #1A8F30;
-  position: absolute;
-  bottom: -63px;
-  left: 0;
   width: 100%;
   text-align: center;
+  padding: 1px;
 }
 
 nav ul li {
   display: inline-block;
-  margin: 5px 3%;
+  margin: 0 3%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 li a {
@@ -73,13 +75,7 @@ li a {
 }
 
 li a:hover {
-  animation: hover 1.5s ease-in-out forwards;
   cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
 }
 
 #hero {
@@ -89,8 +85,7 @@ ul {
   background-size: cover;
 }
 
-.section-first {
-  width: 100%;
+.landing-wrapper {
   margin: 10px auto;
   min-height: 65vh;
   position: relative;
@@ -146,64 +141,47 @@ h3, #latest-news h2 {
 }
 
 .box {
-  float: left;
-  width: 25%;
   height: 300px;
-  background-color: #252625;
   color: #FFF;
   position: relative;
-  padding: 15px;
+  display: inline-block;
+  width: calc(100% / 4);
+  height: 300px;
+  overflow: hidden;
+  padding: 0 10px;
 }
 
 .box-label {
   position: absolute;
   bottom: 0;
+  width: calc(100% - 20px);
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  padding: 7px 0;
-  left: 0;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 10px 0;
+  transition: padding 0.3s;
 }
 
-.box:hover, .box-label:hover {
-  animation: box-stretch 1s forwards ease-in-out;
+.box-label:hover {
+  padding: 25px 0;
   cursor: pointer;
 }
 
-.box-container {
-  width: 100%;
-}
-
-.box-container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .box-wrapper {
-  width: 100%;
   background-color:  #B21645;
-  padding: 30px;
+  padding: 20px;
+  font-size: 0;
 }
 
-#stethoscope {
-  background: url('https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_1280.jpg') no-repeat;
-  background-size: cover;
+.box img, #logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left top;
 }
 
-#prescription {
-  background: url('https://cdn.pixabay.com/photo/2016/07/25/10/15/headache-1540220_1280.jpg') no-repeat;
-  background-size: cover;
-}
-
-#group {
-  background: url('https://cdn.pixabay.com/photo/2014/07/08/10/47/team-386673_1280.jpg') no-repeat;
-  background-size: cover;
-}
-
-#register {
-  background: url('https://cdn.pixabay.com/photo/2017/06/05/14/37/hands-2374246_1280.jpg') no-repeat;
-  background-size: cover;
+.box-label p {
+  color: #FFF;
+  font-size: 14px;
 }
 
 .latest-news-wrapper{
@@ -227,11 +205,10 @@ footer {
 @media only screen and (max-width: 905px){
   .box {width: 100%; height: 100px; padding: 0; margin: 0;
   }
-  .box-container {width: 100%;}
 }
 
 @media only screen and (max-width: 1344px){
-    .section-first {
+    .landing-wrapper {
       width: 100%;
       margin: 10px auto;
       height: auto;
