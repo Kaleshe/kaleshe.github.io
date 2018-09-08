@@ -201,7 +201,7 @@ footer {
     header {
       width: 100%;
     }
-    
+
     #hero {
       height: 30vh;
       background-position: 5% 20%;
@@ -261,10 +261,12 @@ footer {
   #opening-hours {
     position: static;
     display: block;
-    width: 100%
+    width: 100%;
     transform: none;
     text-align: center;
-    padding: 2%;
-    margin: 0;
+    margin-top: 5%;
+  }
+
+  #intro-text {
   }
 }
