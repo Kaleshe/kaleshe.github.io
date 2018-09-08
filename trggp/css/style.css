@@ -86,29 +86,32 @@ li a:hover {
 }
 
 .landing-wrapper {
-  margin: 10px auto;
-  min-height: 65vh;
+  margin: 50px auto;
   position: relative;
 }
 
 #opening-hours {
-  position: absolute;
   color: #FFF;
   background-color: rgba(0,0,0,0.7);
-  transform: translateY(-50%);
-  top: 50%;
   text-align: center;
-  padding: 3% 7%;
-  left: 0;
-  margin-left: 70px;
+  padding: 2% 5%;
+  display: inline-block;
+  width: 30%;
+  margin-left: 80px;
 }
 
 #opening-hours ul {
   line-height: 2.2em;
+  font-size: 0.9em;
 }
 
-#opening-hours ul {
-  font-size: 0.9em;
+#intro-text {
+  margin-right: 80px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 #intro-text h2 {
@@ -116,14 +119,7 @@ li a:hover {
   text-align: center;
 }
 
-#intro-text {
-  width: 60%;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 0;
-  margin-right: 40px;
-}
+
 
 #intro-text p, #latest-news p {
   line-height: 1.8em;
@@ -203,11 +199,17 @@ footer {
 }
 
 @media only screen and (max-width: 905px){
-  .box {width: 100%; height: 100px; padding: 0; margin: 0;
-  }
+
 }
 
-@media only screen and (max-width: 1344px){
+@media only screen and (max-width: 906px){
+    .box {
+      width: 100%;
+      height: 100px;
+      padding: 0;
+      margin: 0;
+    }
+
     .landing-wrapper {
       width: 100%;
       margin: 10px auto;
