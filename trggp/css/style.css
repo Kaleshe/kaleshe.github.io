@@ -198,6 +198,10 @@ footer {
 }
 
 @media only screen and (max-width: 1094px){
+    header {
+      width: 100%;
+    }
+    
     #hero {
       height: 30vh;
       background-position: 5% 20%;
@@ -230,6 +234,7 @@ footer {
       transform: none;
       padding: 0 5% 5% 5%;
       margin-left: 0;
+      display: static;
   }
 
     #intro-text h2 {
