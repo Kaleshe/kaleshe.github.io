@@ -44,7 +44,7 @@ header {
 }
 
 .top-header-wrapper img {
-  display: inline;
+  display: inline-block;
 }
 
 #surgery-details {
@@ -254,19 +254,19 @@ footer {
     }
 }
 
-@media only screen and (max-width: 609px){
-  #hero {
-    width: 100%;
-  }
+@media only screen and (max-width: 626px){
   #opening-hours {
     position: static;
-    display: block;
     width: 100%;
     transform: none;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 0;
   }
 
   #intro-text {
+  }
+
+  .top-header-wrapper img {
+    width: 100%;
   }
 }
