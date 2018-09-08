@@ -43,8 +43,19 @@ header {
   padding: 40px;
 }
 
-.top-header-wrapper img {
+.logo {
+  text-align: center;
   display: inline-block;
+}
+
+#logo-1 {
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+#logo-2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 
 #surgery-details {
@@ -54,7 +65,6 @@ header {
 
 #surgery-details p {
   position: relative;
-  top: -11px;
 }
 
 #surgery-details p, footer p {
@@ -254,6 +264,17 @@ footer {
     }
 }
 
+@media only screen and (max-width: 840px){
+  .top-header-wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .top-header-wrapper img {
+    display: inline-block;
+    margin: 20px 0;
+  }
+}
+
 @media only screen and (max-width: 626px){
   #opening-hours {
     position: static;
@@ -265,9 +286,5 @@ footer {
 
   #intro-text {
     padding-top: 5%;
-  }
-
-  .top-header-wrapper img {
-    width: 100%;
   }
 }
