@@ -20,6 +20,7 @@ p {
 
 h2 {
   letter-spacing: 0.09em;
+  margin: 20px 0;
 }
 
 h3, #latest-news h2 {
@@ -37,6 +38,20 @@ body {
 header {
   background-color: #22BF40;
   color: #FFF;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.bar-1, .bar-2, .bar-3 {
+  background-color: #FFF;
+  width: 30px;
+  height: 3px;
+  display: block;
+  margin: 5px;
 }
 
 .top-header-wrapper {
@@ -78,6 +93,7 @@ nav {
   width: 100%;
   text-align: center;
   padding: 1px;
+  display: block;
 }
 
 nav ul li {
@@ -96,10 +112,6 @@ li a {
   color: #FFF;
 }
 
-li a:hover {
-  cursor: pointer;
-}
-
 #hero {
   background: url('../img/docjumbotron.jpg') no-repeat;
   height: 55vh;
@@ -116,9 +128,9 @@ li a:hover {
 #opening-hours {
   color: #FFF;
   background-color: rgba(0,0,0,0.7);
-  text-align: center;
   padding: 2% 7%;
   display: inline-block;
+  text-align: center;
 }
 
 #opening-hours ul {
@@ -239,7 +251,6 @@ footer {
       display: block;
       width: 600px;
       transform: none;
-      text-align: center;
       padding: 2%;
       margin: 5% auto;
     }
@@ -255,7 +266,6 @@ footer {
 
     #intro-text h2 {
       text-align: left;
-      margin: 0;
     }
 
     #intro-text p {
@@ -270,14 +280,16 @@ footer {
     }
 }
 
-@media only screen and (max-width: 840px){
+@media only screen and (max-width: 841px){
   .top-header-wrapper {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
+    text-align: center;
   }
-  .top-header-wrapper img {
-    display: inline-block;
-    margin: 20px 0;
+
+  #surgery-details {
+    position: static;
+    float:none;
   }
 }
 
@@ -286,11 +298,30 @@ footer {
     position: static;
     width: 100%;
     transform: none;
-    text-align: center;
     margin: 0;
   }
 
   #intro-text {
     padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  nav {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .hamburger-icon:hover > nav {
+    display: block;
+  }
+
+  .top-header-wrapper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 0;
   }
 }
