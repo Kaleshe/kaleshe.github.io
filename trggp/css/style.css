@@ -44,6 +44,7 @@ header {
   display: none;
   cursor: pointer;
   padding: 20px;
+  background-color: #1A8F30;
 }
 
 .bar-1, .bar-2, .bar-3 {
@@ -59,6 +60,7 @@ header {
 }
 
 .logo {
+  opacity: 0;
   text-align: center;
   display: inline-block;
 }
@@ -322,6 +324,5 @@ footer {
   .top-header-wrapper {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 0;
   }
 }
