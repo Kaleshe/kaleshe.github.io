@@ -43,6 +43,14 @@
       </div>
       <div class="bar-3">
       </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Clinics & Services</a></li>
+          <li><a href="">The Team</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </nav>
     </div>
 
     <nav>
@@ -165,6 +173,10 @@ Click here for more information</p>
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script>
+  $(document).ready(function() {
+    $(".logo").animate({ //be sure to change the class of your element to "header"
+        opacity: '1'    });
+});
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
