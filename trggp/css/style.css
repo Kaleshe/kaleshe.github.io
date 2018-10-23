@@ -119,7 +119,7 @@ li a {
 
 #hero {
   background: url('../img/docjumbotron.jpg') no-repeat;
-  max-height: 55vh;
+  height: 55vh;
   background-position: 50% 20%;
   background-size: cover;
 }
@@ -218,7 +218,7 @@ caption {
 }
 
 #latest-news, #intro-text {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 footer {
