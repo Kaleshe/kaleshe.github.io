@@ -79,7 +79,7 @@ header {
 }
 
 .landing-wrapper {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 nav {
@@ -119,7 +119,7 @@ li a {
 
 #hero {
   background: url('../img/docjumbotron.jpg') no-repeat;
-  min-height: 55vh;
+  max-height: 55vh;
   background-position: 50% 20%;
   background-size: cover;
 }
@@ -152,10 +152,6 @@ caption {
 
 #intro-text p, #latest-news p {
   line-height: 2em;
-}
-
-#intro-text {
-  min-width: 400px;
 }
 
 .box {
@@ -222,7 +218,7 @@ caption {
 }
 
 #latest-news, #intro-text {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 footer {
@@ -242,14 +238,14 @@ footer {
 
 @media only screen and (max-width: 962px) {
 
+    #hero {
+      height: 20vh;
+    }
     #latest-news,#intro-text {
       width: 100%;
       padding: 30px;
     }
 
-    .content {
-      padding: 10px;
-    }
     .top-header-wrapper {
       padding: 20px;
     }
