@@ -10,9 +10,6 @@ img {
 	position: absolute;
 }
 
-.content.second img {
-	bottom: -10px;
-}
 .clip {
 	margin-top: 70px;
 	height: 350px;
@@ -132,6 +129,9 @@ blockquote {
 
 /* Sub Heading */
 
+.second h3 {
+	color: #cccccc;
+}
 
 .sub-heading {
 	padding: 0 20px 0 0;
@@ -150,15 +150,21 @@ blockquote {
 
 /* Second Background Colour */
 
-
 .full-width-bg {
-	background-color: #e2e2e2;
-	background: url('https://images.unsplash.com/photo-1446435210126-bfa18ee3b7a1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3566466d76117e29ffb4160a639748fb&auto=format&fit=crop&w=1804&q=80');
-	background-size: cover;
+	background-color: #070D17;
 	position: relative;
+	color: #fff;
 }
 
 /* Content */
+
+img {
+	width: 100%;
+}
+
+.second img {
+	bottom: 0;
+}
 
 section.first ul{
 	margin: 50px 0 20px 0;
