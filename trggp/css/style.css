@@ -14,32 +14,26 @@ Pink: #B21645
     box-sizing: border-box;
 }
 
-p {
-  line-height: 1em;
+h3, #latest-news h2 {
+  color: #22BF40;
 }
 
 h2 {
-  letter-spacing: 0.09em;
-  margin: 20px 0;
-}
-
-h3, #latest-news h2 {
-  color: #B21645;
+  margin: 0;
 }
 
 body {
   color: #403A31;
-  font-family: 'Helvetica', 'Roboto', sans-serif;
-  font-size: 16px;
+  font-family: 'Open Sans', 'Helvetica', 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 header {
   background-color: #22BF40;
   color: #FFF;
 }
-
 .hamburger-icon {
   display: none;
   cursor: pointer;
@@ -56,23 +50,23 @@ header {
 }
 
 .top-header-wrapper {
-  padding: 40px;
+  padding: 50px;
 }
 
 .logo {
-  opacity: 0;
   text-align: center;
   display: inline-block;
+  font-family: Helvetica;
 }
 
 #logo-1 {
   font-size: 2em;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
 }
 
 #logo-2 {
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 0.75em;
 }
 
 #surgery-details {
@@ -84,71 +78,72 @@ header {
   position: relative;
 }
 
-#surgery-details p, footer p {
-  font-size: 0.8em;
-  line-height: 1.5em;
+.landing-wrapper {
+  padding: 40px 0;
 }
 
 nav {
-  clear: both;
   background-color: #1A8F30;
   width: 100%;
   text-align: center;
-  padding: 1px;
   display: block;
 }
 
 nav ul li {
   display: inline-block;
-  margin: 0 3%;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  transition: background-color 0.5s;
+}
+
+nav ul li:hover {
+  background-color: #167829;
 }
 
 ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+li {
+  font-size: 14px;
 }
 
 li a {
   text-decoration: none;
   color: #FFF;
+  display: block;
+  padding: 20px 70px;
 }
 
 #hero {
   background: url('../img/docjumbotron.jpg') no-repeat;
-  height: 55vh;
-  background-position: 90% 10%;
+  min-height: 55vh;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
-.landing-wrapper {
-  width: 80%;
-  margin: 50px auto;
-  position: relative;
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-#opening-hours {
-  color: #FFF;
-  background-color: rgba(0,0,0,0.7);
-  padding: 2% 7%;
-  display: inline-block;
-  text-align: center;
+th {
+  text-align: left;
 }
 
-#opening-hours ul {
-  line-height: 2em;
-  font-size: 0.9em;
-  letter-spacing: 0.07em;
+td {
+  text-align: right;
 }
 
-#intro-text {
-  position: absolute;
-  width: 60%;
-  display: inline-block;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+caption {
+    display: table-caption;
+    text-align: center;
+    padding: 5px;
 }
+
 
 #intro-text h2 {
   color: #22BF40;
@@ -156,7 +151,11 @@ li a {
 }
 
 #intro-text p, #latest-news p {
-  line-height: 1.8em;
+  line-height: 2em;
+}
+
+#intro-text {
+  min-width: 400px;
 }
 
 .box {
@@ -168,6 +167,7 @@ li a {
   height: 300px;
   overflow: hidden;
   padding: 0 10px;
+  cursor: pointer;
 }
 
 .box-label {
@@ -178,15 +178,16 @@ li a {
   background-color: rgba(0, 0, 0, .6);
   padding: 10px 0;
   transition: padding 0.3s;
+  font-size: 14px
 }
 
-.box-label:hover {
+.box:hover > .box-label {
   padding: 25px 0;
   cursor: pointer;
 }
 
 .box-wrapper {
-  background-color:  #B21645;
+  background-color:  #E5E5E5;
   padding: 40px;
   font-size: 0;
 }
@@ -200,18 +201,28 @@ li a {
 
 .box-label p {
   color: #FFF;
-  font-size: 14px;
 }
 
 .latest-news-wrapper{
-  background-color: #F1F1F1;
+  position: relative;
+}
+
+.content {
+    padding: 30px 0;
+}
+
+#intro-text {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #latest-news {
-  clear: both;
   width: 60%;
-  padding: 40px 0;
   margin: auto;
+}
+
+#latest-news, #intro-text {
+  padding: 40px 0;
 }
 
 footer {
@@ -221,94 +232,59 @@ footer {
   padding: 10px;
 }
 
-@media only screen and (max-width: 1346px){
-  .landing-wrapper {
-    width: 90%;
+@media only screen and (max-width: 1031px) {
+  .box {
+    display: block;
+    width: 100%;
+    height: 30vh;
   }
 }
 
-@media only screen and (max-width: 1094px){
-    header {
+@media only screen and (max-width: 962px) {
+
+    #latest-news,#intro-text {
       width: 100%;
+      padding: 30px;
     }
 
-    #hero {
-      height: 30vh;
-      background-position: 5% 20%;
+    .content {
+      padding: 10px;
     }
-    .box {
-      width: 100%;
-      height: 100px;
+    .top-header-wrapper {
+      padding: 20px;
     }
 
-    .landing-wrapper {
-      width: 100%;
-      margin: 0 auto;
-      height: auto;
+    .logo {
+      display: block;
+      text-align: center;
+      font-family: Helvetica;
+    }
+
+    #logo-1 {
+      font-size: 2em;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+
+    #logo-2 {
+      text-transform: uppercase;
+      letter-spacing: 0.75em;
+      text-align: center;
+    }
+
+    #surgery-details {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+
+    #surgery-details p {
       position: relative;
     }
 
-    #opening-hours {
-      position: static;
-      display: block;
-      width: 600px;
-      transform: none;
-      padding: 2%;
-      margin: 5% auto;
-    }
-
-    #intro-text {
-      width: 100%;
-      position: static;
-      transform: none;
-      padding: 0 5% 5% 5%;
-      margin-left: 0;
-      display: static;
-  }
-
-    #intro-text h2 {
-      text-align: left;
-    }
-
-    #intro-text p {
-      margin: 12px 0;
-
-    }
-
-    #latest-news {
-      width: 100%;
-      margin: 0;
-      padding: 5%;
-    }
 }
 
-@media only screen and (max-width: 841px){
-  .top-header-wrapper {
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-  }
-
-  #surgery-details {
-    position: static;
-    float:none;
-  }
-}
-
-@media only screen and (max-width: 626px){
-  #opening-hours {
-    position: static;
-    width: 100%;
-    transform: none;
-    margin: 0;
-  }
-
-  #intro-text {
-    padding-top: 5%;
-  }
-}
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 881px) {
   nav {
     display: none;
   }
@@ -317,12 +293,15 @@ footer {
     display: block;
   }
 
+  .hamburger-icon a {
+    padding-top: -20px;
+  }
+
   .hamburger-icon:hover > nav {
     display: block;
   }
 
-  .top-header-wrapper {
-    width: 100%;
-    padding-top: 50px;
+  nav li a {
+    padding: 0 30px;
   }
 }
