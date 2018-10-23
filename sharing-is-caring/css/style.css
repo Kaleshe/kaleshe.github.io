@@ -7,12 +7,20 @@ body {
 img {
 	display: block;
 	margin: 0 auto;
-	margin-top: 50px;
-	border-radius: 50em;
-	width: 300px;
-	
-	}
-	
+	position: absolute;
+}
+
+.content.second img {
+	bottom: -10px;
+}
+.clip {
+	margin-top: 70px;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
 #container {
 	max-width: 100%;
 }
@@ -79,26 +87,26 @@ nav li a {
 }
 
 nav a:active {
-	
+
 }
 
 nav a:hover, .mnav a:hover {
-	color: #FFC633; 
+	color: #FFC633;
 }
 
 nav a:visited{
-	
+
 }
 
 .list-wrap ul{
-	display: inline-block;		
+	display: inline-block;
 }
- 
+
 /* Header */
 
 
 header {
-	background: url("../images/headerbg1.jpg") no-repeat center center fixed; 
+	background: url("https://images.unsplash.com/photo-1526725702345-bdda2b97ef73?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=27aba73b92ba94e5dd6ca25eec615dbe&auto=format&fit=crop&w=1047&q=80") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -140,9 +148,9 @@ blockquote {
 	width: 100%;
 }
 
-/* Second Background Colour */	
-	
-	
+/* Second Background Colour */
+
+
 .full-width-bg {
 	background-color: #e2e2e2;
 	position: relative;
@@ -158,8 +166,7 @@ section.first ul{
 	width: 52%;
 	margin: auto;
 	line-height: 1.5em;
-	padding-top: 100px;
-	padding: 0 0 300px 0;
+	padding-bottom: 50px;
 }
 
 .content.first, .content.second, .content.third {
@@ -199,35 +206,35 @@ footer p {
 
 /*  Menu Break */
 @media screen and (max-width:1065px) {
-	
-	nav { 
+
+	nav {
 		display: none;
 	}
-	
+
 	.dropdown {
 		display: block;
 	}
-	
+
 	.dropdown a{
 		text-decoration: none;
 		color: #fff;
 	}
-	
+
 	.dropdown ul {
 		list-style-type: none;
 	}
-	
+
 	.dropdown > ul> li:hover > .mnav {
 		display: block;
-		background-color: rgba{5, 22, 122, 0.8);
+		background-color: rgba(5, 22, 122, 0.8);
 	}
 	.content {
 		padding: 0;
 		padding-bottom: 20px;
 	}
-	
+
 	.content.first {
-		padding-bottom: 150px;		
+		padding-bottom: 150px;
 	}
 }
 
@@ -235,7 +242,7 @@ footer p {
 	section.content.first ul {
 		margin: 0;
 	}
-	
+
 	.list-wrap {
 		margin: 20px 0;
 	}
@@ -243,13 +250,13 @@ footer p {
 	.content {
 		width: 90%;
 	}
-	
+
 	.sub-heading {
 		width: 85%;
 		display: block;
 		margin: auto;
 	}
-	
+
 	.banner {
 		padding: 10px 0 10px 0;
 	}
@@ -257,12 +264,12 @@ footer p {
 	blockquote {
 		display: none;
 	}
-	
+
 	header {
 		height: 150px;
 
 	}
-	
+
 	section.content h2 {
 		line-height: 1em;
 	}
