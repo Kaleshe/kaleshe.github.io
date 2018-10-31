@@ -213,19 +213,19 @@ caption {
 }
 
 #latest-news {
-  width: 60%;
+  width: 40%;
   margin: auto;
 }
 
 #latest-news, #intro-text {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 footer {
   background-color: #252625;
   color: #FFF;
   text-align: center;
-  padding: 10px;
+  padding: 40px;
 }
 
 @media only screen and (max-width: 1031px) {
