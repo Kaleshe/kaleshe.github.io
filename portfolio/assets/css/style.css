@@ -1,0 +1,167 @@
+:root {
+  --main-colour: #202020;
+  --secondary-colour: #FFF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  background-color: var(--main-colour);
+  color: var(--secondary-colour);
+  margin: 2em 4em;
+  background-image: url(../img/city.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 105%;
+  height: calc(100vh - 4em);
+}
+
+span {
+  font-size: 1.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4em;
+}
+
+h2 {
+  font-weight: 100;
+  opacity: 0.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-flex;
+  margin-left: 2em;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  height: calc(100% - 4em);
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  align-items: center;
+  height: 80%;
+}
+
+#intro-text {
+  justify-content: center;
+  flex-direction: column;
+}
+
+#intro-text h1 {
+  text-align: center;
+}
+
+#intro-text section {
+  line-height: 1.8em;
+  position: relative;
+  letter-spacing: 0.04em;
+}
+
+#intro-text button {
+  padding: 1em 3em;
+  display: block;
+  margin-top: 1em;
+}
+
+button {
+  border-radius: 2px;
+  padding: 0.6em 1.2em;
+  border-style: none;
+  font-weight: 300;
+  transition: background 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: var(--main-colour);
+  color: var(--secondary-colour);
+  border: solid var(--secondary-colour) 1px;
+}
+
+.btn-dark:hover {
+  background-color: var(--secondary-colour);
+  border: solid var(--secondary-colour) 1px;
+}
+
+.btn-dark:hover {
+  color: var(--main-colour)!important;
+}
+
+.btn-light {
+  background-color: var(--secondary-colour);
+  border: solid var(--secondary-colour) 1px;
+  color: var(--main-colour);
+  font-weight: 600;
+}
+
+.btn-light:hover {
+  background-color: var(--main-colour);
+  border: solid var(--secondary-colour) 1px;
+  color: var(--secondary-colour);
+}
+
+a:link, a:visited {
+  text-decoration: none!important;
+  color: var(--secondary-colour);
+}
+
+.active a, .active button {
+  font-weight: 600;
+}
+
+.text a:hover::after {
+  height: 1.5px;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: var(--secondary-colour);
+  position: absolute;
+  animation: fade-in 0.2s;
+  bottom: -10px;
+}
+
+.fab {
+  transition: opacity 0.2s;
+}
+
+.fab:hover {
+  opacity: 0.8;
+}
+
+#kaleshe-icon {
+  height: 1.2em;
+  vertical-align:baseline;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
