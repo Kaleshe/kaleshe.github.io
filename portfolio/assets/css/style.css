@@ -12,7 +12,15 @@ body {
   background-image: url(../img/city.svg);
   background-repeat: no-repeat;
   background-position: 50% 105%;
+  background-attachment: fixed;
   height: calc(100vh - 4em);
+  line-height: 1.7em;
+
+}
+
+p {
+  font-weight: 200;
+  opacity: 0.8;
 }
 
 span {
@@ -133,17 +141,16 @@ main {
   justify-content: center;
 }
 
-#intro-text h1 {
+#index h1 {
   text-align: center;
 }
 
-#intro-text section {
-  line-height: 1.8em;
+#index section {
   position: relative;
   letter-spacing: 0.04em;
 }
 
-#intro-text button {
+#index button {
   padding: 1em 3em;
   display: block;
   margin-top: 1em;
@@ -265,6 +272,23 @@ textarea {
   max-height: 400px;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-entry {
+  background-color: red;
+  width: calc(100% / 3);
+  height: 100px;
+}
+
+
+#work {
+  background-color: var(--secondary-colour);
+}
+
 @media only screen and (max-width: 892px){
   #desktop-nav {
     display: none;
@@ -274,7 +298,11 @@ textarea {
     display: block;
   }
 
-  #intro-text h1 {
-    text-align: left;
+  h1 {
+    text-align: left!important;
+  }
+
+  form {
+    width: 100%;
   }
 }
