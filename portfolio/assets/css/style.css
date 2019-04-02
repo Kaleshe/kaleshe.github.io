@@ -25,6 +25,7 @@ span {
 h1 {
   font-weight: 600;
   font-size: 4em;
+  line-height: 1em;
 }
 
 h2 {
@@ -39,13 +40,81 @@ header {
 }
 
 ul {
+  padding-left: 0;
   list-style-type: none;
 }
 
-li {
+#mobile-nav {
+  z-index: 5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 20, 20, 0.95);
+  flex-direction: column;
+  animation: fade-in 0.2s;
+}
+
+#mobile-nav li {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.socials .fab {
+  margin: 0.5em;
+}
+
+#mobile-nav, #hamburger {
+  display: none;
+}
+
+#desktop-nav li {
   display: inline-flex;
-  margin-left: 2em;
   position: relative;
+}
+
+#desktop-nav li:nth-child(n+2) {
+  margin-left: 2em;
+}
+
+/* Mobile Menu */
+
+#hamburger {
+  width: 50px;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  height: 5px;
+  background-color: var(--secondary-colour);
+  transition: 0.2s;
+}
+
+.bar:nth-child(2n) {
+  margin: 0.6em 0;
+}
+
+.close-icon .bar {
+  position: absolute;
+}
+
+.close-icon .bar:nth-child(2n) {
+  opacity: 0;
+}
+
+.close-icon .bar:first-child {
+  transform: rotate(45deg);
+}
+
+.close-icon .bar:last-child {
+  transform: rotate(-45deg);
 }
 
 main {
@@ -194,4 +263,18 @@ input[type="submit"] {
 
 textarea {
   max-height: 400px;
+}
+
+@media only screen and (max-width: 892px){
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #intro-text h1 {
+    text-align: left;
+  }
 }
