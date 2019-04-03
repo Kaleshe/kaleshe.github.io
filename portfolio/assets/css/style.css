@@ -10,15 +10,12 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  background-color: var(--main-colour);
   color: var(--secondary-colour);
-  margin: 2em 0;
-  background-image: url(../img/city.svg);
+  background-image: url('../img/city.svg'), linear-gradient(141deg, var(--main-colour) 0%, rgba(116, 26, 104, 1) 50%,rgba(50, 11, 45, 1) 100%);
   background-repeat: no-repeat;
-  background-position: 50% 105%;
-  background-attachment: fixed;
+  background-position: 50% 100%;
   line-height: 1.7em;
-
+  height: 100%;
 }
 
 p {
@@ -37,7 +34,7 @@ span {
 
 h1 {
   font-weight: 600;
-  font-size: 4em;
+  font-size: 4rem;
   line-height: 1em;
 }
 
@@ -56,15 +53,6 @@ header {
 ul {
   padding-left: 0;
   list-style-type: none;
-}
-
-section {
-  max-width: 80%;
-  margin: 2em;
-}
-
-img {
-  margin: 2em;
 }
 
 #mobile-menu {
@@ -151,7 +139,7 @@ main {
 
 .container {
   display: flex;
-  max-width: 70%;
+  max-width: 1200px;
   margin: 0 auto;
   align-items: center;
   height: 100vh;
@@ -165,11 +153,15 @@ main {
 
 #about img {
   border-radius: 0.2em;
+  max-width: 30%;
+}
+
+#about section {
+  margin-right: 1em;
 }
 
 .wrapper {
   width: 100%!important;
-  padding: 4em 0;
 }
 
 
@@ -181,14 +173,13 @@ main {
 
 #index.container {
   letter-spacing: 0.04em;
-  position: relative;
-  top: -150px;
+  height: calc(100vh - 4em);
 }
 
 #index button {
   padding: 1em 3em;
   display: block;
-  margin-top: 1em;
+  margin: 3em auto 0 auto;
 }
 
 button {
@@ -204,7 +195,7 @@ button:hover {
 }
 
 .btn-dark {
-  background-color: var(--main-colour);
+  background-color: rgba(0, 0, 0, 0);
   color: var(--secondary-colour);
   border: solid var(--secondary-colour) 1px;
 }
@@ -226,7 +217,7 @@ button:hover {
 }
 
 .btn-light:hover {
-  background-color: var(--main-colour);
+  background-color: rgba(0, 0, 0, 0);
   border: solid var(--secondary-colour) 1px;
   color: var(--secondary-colour);
 }
@@ -297,7 +288,7 @@ input, textarea {
 }
 
 input[type="submit"] {
-  padding: 0.5em 1em;
+  padding: 0.8em 1em;
   transition: 0.2s;
   cursor: pointer;
   width: 30%;
@@ -323,6 +314,9 @@ textarea {
 }
 
 @media only screen and (max-width: 892px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
   #desktop-menu {
     display: none;
   }
@@ -337,5 +331,9 @@ textarea {
 
   form {
     width: 100%;
+  }
+
+  header {
+    margin:
   }
 }
