@@ -1,13 +1,13 @@
 var hamburger = document.getElementById('hamburger');
-var mobileNav = document.getElementById('mobile-nav');
+var mobileMenu = document.getElementById('mobile-menu');
 
 
 function menu(){hamburger.addEventListener('click', function(){
-  if(mobileNav.style.display = "none"){
-    mobileNav.style.display = "flex";
+  if(mobileMenu.style.display === "none"){
+    mobileMenu.style.display = "flex";
     hamburger.classList.add('close-icon');
   } else {
-    mobileNav.style.display = "none";
+    mobileMenu.style.display = "none";
     hamburger.classList.remove('close-icon');
   };
 });};

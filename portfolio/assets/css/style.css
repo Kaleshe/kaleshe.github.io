@@ -3,6 +3,10 @@
   --secondary-colour: #FFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -63,7 +67,7 @@ img {
   margin: 2em;
 }
 
-#mobile-nav {
+#mobile-menu {
   z-index: 5;
   position: fixed;
   height: 100%;
@@ -78,7 +82,7 @@ img {
   animation: fade-in 0.2s;
 }
 
-#mobile-nav li {
+#mobile-menu li {
   font-size: 2em;
   margin: 0.5em;
 }
@@ -87,16 +91,20 @@ img {
   margin: 0.5em;
 }
 
-#mobile-nav, #hamburger {
+#mobile-menu, #hamburger {
   display: none;
 }
 
-#desktop-nav li {
+#desktop-menu {
+  z-index: 5;
+}
+
+#desktop-menu li {
   display: inline-flex;
   position: relative;
 }
 
-#desktop-nav li:nth-child(n+2) {
+#desktop-menu li:nth-child(n+2) {
   margin-left: 2em;
 }
 
@@ -164,9 +172,6 @@ main {
   padding: 4em 0;
 }
 
-.wrapper#work {
-  background-color: var(--secondary-colour);
-}
 
 #index h1 {
   text-align: center;
@@ -318,7 +323,7 @@ textarea {
 }
 
 @media only screen and (max-width: 892px){
-  #desktop-nav {
+  #desktop-menu {
     display: none;
   }
 
