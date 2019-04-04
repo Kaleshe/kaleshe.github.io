@@ -148,7 +148,7 @@ main {
 }
 
 #about .container {
-  flex-direction: row!important;
+  flex-direction: row;
 }
 
 #about img {
@@ -157,7 +157,7 @@ main {
 }
 
 #about section {
-  margin-right: 1em;
+  margin-right: 2%;
 }
 
 .wrapper {
@@ -312,6 +312,12 @@ textarea {
 #work {
 }
 
+@media only screen and (max-width: 1264px){
+  .container {
+    margin: 3em;
+  }
+}
+
 @media only screen and (max-width: 892px){
   .grid {
     grid-template-columns: 1fr;
@@ -340,7 +346,11 @@ textarea {
 @media only screen and (max-width: 768px){
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column!important;
     margin: 1em;
+  }
+
+  #about section {
+    margin-right: 0;
   }
 }
