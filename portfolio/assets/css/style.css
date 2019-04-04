@@ -268,7 +268,6 @@ a:link, a:visited {
 form {
   display: flex;
   flex-direction: column;
-  margin: 1em;
   width: 40%;
 }
 
@@ -335,5 +334,13 @@ textarea {
 
   header {
     margin:
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
   }
 }
