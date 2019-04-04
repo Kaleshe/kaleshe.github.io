@@ -25,8 +25,8 @@ p {
   font-size: 1.2em;
 }
 
-span {
-  font-size: 1.7em;
+header span {
+  font-size: 1.4em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -112,7 +112,7 @@ ul {
 }
 
 .bar:nth-child(2n) {
-  margin: 0.6em 0;
+    margin: 0.5em 0;
 }
 
 .close-icon .bar {
