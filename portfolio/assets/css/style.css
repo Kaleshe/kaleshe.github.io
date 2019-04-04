@@ -157,7 +157,7 @@ main {
 
 #about img {
   border-radius: 0.2em;
-  max-width: 40%;
+  max-width: 30%;
 }
 
 #about section {
@@ -356,5 +356,11 @@ textarea {
 
   #about section {
     margin-right: 0;
+  }
+
+  #about img {
+    border-radius: 0.2em;
+    max-width: 50%;
+    margin: 2em;
   }
 }
