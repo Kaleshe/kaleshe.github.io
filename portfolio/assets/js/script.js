@@ -12,7 +12,6 @@ function menu(){hamburger.addEventListener('click', function(){
     mobileMenu.style.display = "none";
     mobileMenu.classList.remove('display-menu');
     hamburger.classList.remove('close-icon');
-    console.log('second');
   };
 });};
 
