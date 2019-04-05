@@ -9,13 +9,30 @@ Light grey: #E5E5E5
 Pink: #B21645
 */
 
+#mobile-nav.nav-hidden {
+  display: none;
+}
+
+#mobile-nav.nav-show {
+  display: block;
+}
+
+#mobile-nav{
+  display: block;
+}
+
+#mobile-nav li {
+  display: block;
+  padding: 1em;
+}
+
 
 * {
     box-sizing: border-box;
 }
 
-h3, #latest-news h2 {
-  color: #22BF40;
+h1, h2, h3 {
+  color: #229E40
 }
 
 h2 {
@@ -23,30 +40,36 @@ h2 {
 }
 
 body {
-  color: #403A31;
-  font-family: 'Open Sans', 'Helvetica', 'Roboto', sans-serif;
+  color: #7A7A7A;
+  font-family: 'Roboto', 'Helvetica', 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
 }
 
 header {
-  background-color: #22BF40;
+  background-color: #229E40;
   color: #FFF;
 }
-.hamburger-icon {
+#hamburger-icon {
   display: none;
   cursor: pointer;
   padding: 20px;
-  background-color: #1A8F30;
+  width: 100px;
 }
 
 .bar-1, .bar-2, .bar-3 {
   background-color: #FFF;
-  width: 30px;
-  height: 3px;
+  height: 6px;
   display: block;
-  margin: 5px;
+  width: 100%;
+  margin: 10px;
 }
 
 .top-header-wrapper {
@@ -83,7 +106,6 @@ header {
 }
 
 nav {
-  background-color: #1A8F30;
   width: 100%;
   text-align: center;
   display: block;
@@ -107,7 +129,7 @@ ul {
 }
 
 li {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 li a {
@@ -118,10 +140,38 @@ li a {
 }
 
 #hero {
-  background: url('../img/docjumbotron.jpg') no-repeat;
+  background: linear-gradient(45deg, rgba(50, 55, 60, 0.7), rgba(50, 55, 60, 0.2)), url('../img/docjumbotron.jpg') no-repeat;
   height: 55vh;
   background-position: 50% 20%;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1, #hero h2, #hero p {
+  color: rgb(255, 255, 255);
+}
+
+#hero button {
+  border-radius: 2em;
+  color:rgb(30, 40, 48);
+  background-color: rgb(255, 255, 255);
+  padding: 1em 2em;
+  border-style: none;
+  font-weight: 700;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+#hero button:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.wrapper {
+  max-width: 80%;
+
 }
 
 .clearfix::after {
@@ -146,7 +196,7 @@ caption {
 
 
 #intro-text h2 {
-  color: #22BF40;
+  color:  #229E40;
   text-align: center;
 }
 
@@ -155,26 +205,24 @@ caption {
 }
 
 .box {
-  height: 300px;
   color: #FFF;
   position: relative;
   display: inline-block;
   width: calc(100% / 4);
-  height: 300px;
+  height: 400px;
   overflow: hidden;
-  padding: 0 10px;
   cursor: pointer;
 }
 
 .box-label {
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: calc(100% - 20px);
   text-align: center;
   background-color: rgba(0, 0, 0, .6);
   padding: 10px 0;
   transition: padding 0.3s;
-  font-size: 14px
+  font-size: 18px;
 }
 
 .box:hover > .box-label {
@@ -183,8 +231,7 @@ caption {
 }
 
 .box-wrapper {
-  background-color:  #E5E5E5;
-  padding: 40px;
+  background-color: rgb(240, 240, 240);
   font-size: 0;
 }
 
@@ -209,16 +256,15 @@ caption {
 
 #intro-text {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 #latest-news {
-  width: 40%;
-  margin: auto;
-}
-
-#latest-news, #intro-text {
-  padding: 80px 0;
+  max-width: 80%;
+  margin: 2em auto;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.08);
+  border-radius: 1em;
+  padding: 5em;
 }
 
 footer {
@@ -236,15 +282,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 962px) {
-
-    #hero {
-      height: 20vh;
-    }
-    #latest-news,#intro-text {
-      width: 100%;
-      padding: 30px;
-    }
+@media only screen and (max-width: 1060px) {
 
     .top-header-wrapper {
       padding: 20px;
@@ -278,22 +316,26 @@ footer {
       position: relative;
     }
 
+    #intro-text {
+      margin: 2em;
+    }
+
 }
 
-@media only screen and (max-width: 881px) {
+@media only screen and (max-width: 900px) {
   nav {
     display: none;
   }
 
-  .hamburger-icon {
+  #hamburger-icon {
     display: block;
   }
 
-  .hamburger-icon a {
+  #hamburger-icon a {
     padding-top: -20px;
   }
 
-  .hamburger-icon:hover > nav {
+  #hamburger-icon:hover > nav {
     display: block;
   }
 
