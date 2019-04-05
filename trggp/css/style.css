@@ -346,4 +346,14 @@ footer {
     margin: 1em;
     padding: 1em;
   }
+
+  #hero {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  #surgery-details p {
+    text-align: left;
+  }
 }
