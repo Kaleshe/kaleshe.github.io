@@ -375,9 +375,20 @@ textarea {
     display: block;
   }
 
+  #about img {
+    display: block;
+    margin: 0 auto;
+  }
+
   html {
     height: auto;
     min-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #about img {
+    max-width: 100%;
   }
 }
 
@@ -397,11 +408,6 @@ textarea {
   h2 {
     font-size: 1.5rem;
   }
-
-  #about img {
-    max-width: 100%;
-  }
-
 }
 
 @media only screen and (max-width: 320px){
