@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   line-height: 1.7em;
-  height: 100%;
+  overflow-y: hidden;
 }
 
 p {
@@ -47,9 +47,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2em 4em;
-  position: fixed;
-  width: calc(100% - 8em);
+  margin: 1em 3em;
 }
 
 .nav-transparent {
@@ -70,14 +68,14 @@ ul {
   align-items: center;
   top: 0;
   left: 0;
-  background-color: rgba(20, 20, 20, 0.95);
+  background-color: rgba(0, 0, 20, 0.95);
   flex-direction: column;
   animation: fade-in 0.2s;
 }
 
 #mobile-menu li {
   font-size: 2em;
-  margin: 0.5em;
+  margin: 1em 0;
 }
 
 .socials .fab {
@@ -143,8 +141,7 @@ ul {
 }
 
 main {
-  width: 100%;
-  height: calc(100% - 4em);
+  height: 100vh;
 }
 
 .container {
@@ -152,12 +149,12 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
 }
 
-#about .container {
+#about.container {
   flex-direction: row;
 }
 
@@ -300,6 +297,8 @@ input[type="submit"] {
   transition: 0.2s;
   cursor: pointer;
   width: 30%;
+  display: block;
+  margin: auto;
 }
 
 textarea {
@@ -350,14 +349,16 @@ textarea {
 
 @media only screen and (max-width: 768px){
   .container {
-    display: flex;
-    flex-direction: column!important;
-    margin: 1em 1em 5em 1em;
+    margin: 0 2em;
+  }
+
+  main {
+    height: auto;
+    min-height: 100vh;
   }
 
   header {
-    margin: 1em;
-    width: calc(100% - 2em);
+    margin: 1em 2em 4em 2em;
   }
 
   #about section {
@@ -366,7 +367,28 @@ textarea {
 
   #about img {
     border-radius: 0.2em;
-    max-width: 80%;
-    margin: 1em;
+    max-width: 40%;
+    margin: 3em auto;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  #index button {
+    margin: 2em 0;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }

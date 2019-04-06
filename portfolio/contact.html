@@ -101,12 +101,18 @@
   </header>
   
   <main>
-    <div class="container" id="index">
+    <div class="container" id="contact">
       <section>
-        <h1>Web Designer in London</h1>
-        <h2>I create beautiful websites that are easy to use on mobile and desktop.</h2>
-        <a href="work.html"><button class="btn-dark">View Work</button></a>
+        <h1>Let's work together!</h1>
       </section>
+      <form name="input" method="POST" action="https://formspree.io/contact@kaleshe.co.uk" method="post">
+        <input type="text" name="Name" placeholder="Your name">
+        <input type="email" name="_replyto" placeholder="Your email">
+        <textarea name="message" placeholder="Type your message"></textarea>
+        <input class="btn-light" type="submit" value="Send">
+        <input type="hidden" name="_subject" value="Enter your subject here"/>
+        <input type="hidden" name="_next" value="thanks.html">
+      </form>
     </div>
   </main>
 
