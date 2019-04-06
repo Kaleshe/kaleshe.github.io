@@ -20,9 +20,23 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   line-height: 1.7em;
-  height: 100%;
-  padding: 1em;
   margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+main {
+  height: calc(100% - 81px - .5em);
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
 }
 
 p {
@@ -145,19 +159,6 @@ ul {
 
 .close-icon .bar:last-child {
   transform: rotate(-45deg);
-}
-
-main {
-  height: calc(100% - 2em);
-}
-
-.container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
 }
 
 #about.container {
@@ -372,6 +373,11 @@ textarea {
 
   #about.container {
     display: block;
+  }
+
+  html {
+    height: auto;
+    min-height: 100%;
   }
 }
 
