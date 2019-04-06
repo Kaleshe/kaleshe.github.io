@@ -3,19 +3,26 @@
   --secondary-colour: #FFF;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: var(--secondary-colour);
-  background-image: url('../img/city.svg'), linear-gradient(130deg, var(--main-colour) 0%,  var(--main-colour) 20%, #000a18 90%);
+  background: linear-gradient(130deg, var(--main-colour) 0%,  var(--main-colour) 20%, #000a18 100%);
+  background-image: url('../img/city.svg'), linear-gradient(130deg, var(--main-colour) 0%,  var(--main-colour) 20%, #000a18 100%);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   line-height: 1.7em;
-  overflow-y: hidden;
+  height: 100%;
+  padding: 1em;
+  margin: 0;
 }
 
 p {
@@ -47,7 +54,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 3em;
+  margin: 0 3em;
 }
 
 .nav-transparent {
@@ -141,7 +148,7 @@ ul {
 }
 
 main {
-  height: 100vh;
+  height: calc(100% - 2em);
 }
 
 .container {
@@ -150,7 +157,6 @@ main {
   margin: 0 auto;
   align-items: center;
   height: 100%;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -185,7 +191,7 @@ main {
 #index button {
   padding: 1em 3em;
   display: block;
-  margin: 3em auto 0 auto;
+  margin: 3em auto;
 }
 
 button {
@@ -194,6 +200,7 @@ button {
   border-style: none;
   font-weight: 300;
   transition: background 0.2s;
+  font-size: 1em;
 }
 
 button:hover {
@@ -271,16 +278,19 @@ a:link, a:visited {
   };
 }
 
-form {
-  display: flex;
+.container#contact {
   flex-direction: column;
+}
+
+form {
   width: 40%;
 }
 
 input, input::placeholder, textarea::placeholder, textarea {
-  color: var(--secondary-colour);
+  color: rgba(255, 255, 255, 0.6);
   background-color: rgba(0, 0, 0, 0);
   font-weight: 200;
+  font-family: roboto;
 }
 
 input, textarea {
@@ -349,26 +359,18 @@ textarea {
 
 @media only screen and (max-width: 768px){
   .container {
-    margin: 0 2em;
-  }
-
-  main {
-    height: auto;
-    min-height: 100vh;
+    margin: 0 1em;
   }
 
   header {
-    margin: 1em 2em 4em 2em;
+    margin: 0 1em;
   }
 
   #about section {
     margin-right: 0;
   }
 
-  #about img {
-    border-radius: 0.2em;
-    max-width: 40%;
-    margin: 3em auto;
+  #about.container {
     display: block;
   }
 }
@@ -381,9 +383,7 @@ textarea {
   #index button {
     margin: 2em 0;
   }
-}
 
-@media only screen and (max-width: 320px){
   h1 {
     font-size: 3rem;
   }
@@ -391,4 +391,9 @@ textarea {
   h2 {
     font-size: 1.5rem;
   }
+
+}
+
+@media only screen and (max-width: 320px){
+
 }
