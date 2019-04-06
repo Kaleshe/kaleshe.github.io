@@ -1,5 +1,5 @@
 :root {
-  --main-colour: #202020;
+  --main-colour: #320530;
   --secondary-colour: #FFF;
 }
 
@@ -11,7 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: var(--secondary-colour);
-  background-image: url('../img/city.svg'), linear-gradient(141deg, var(--main-colour) 0%, rgba(116, 26, 104, 1) 50%,rgba(50, 11, 45, 1) 100%);
+  background-image: url('../img/city.svg'), linear-gradient(180deg, var(--main-colour) 0%, #000a18 100%);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   line-height: 1.7em;
