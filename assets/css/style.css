@@ -316,15 +316,66 @@ textarea {
   max-height: 400px;
 }
 
-.grid {
+.work-gallery {
   display: grid;
-  grid-gap: 0.1em;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  height: auto;
+  grid-gap: 3em;
+
+}
+
+.gallery-item {
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  height: 350px;
+  box-sizing: border-box;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  justify-content: center;
   width: 100%;
 }
 
-.portfolio-entry {
-  object-fit: cover;
+.gallery-item img {
+  max-width: 250px;
+  object-fit: contain;
+}
+
+#filter-escape {
+  background: linear-gradient(45deg, rgb(233, 64, 57), rgb(250, 238, 71));
+}
+
+#its-never-too-late {
+  background-color: rgb(4, 127, 163);
+}
+
+#many-bits-of-me {
+  background-color: rgb(255, 205, 52);
+}
+
+#rags-to-riches {
+  background-color: rgb(238, 55, 43);
+}
+
+#the-rushey-green-group-practice {
+  background-color: rgb(61, 181, 74);
+}
+
+#wonkfest {
+  background-color: rgb(255, 255, 255);
+}
+
+#golden-child {
+  background-color: rgb(10, 10, 10);
+}
+
+#unique-occassions {
+  background-color: rgb(243, 241, 215);
 }
 
 
@@ -334,6 +385,10 @@ textarea {
 @media only screen and (max-width: 1264px){
   .container {
     margin: 0 3em;
+  }
+
+  .work-gallery {
+    grid-template-columns: 2fr
   }
 }
 
