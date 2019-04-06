@@ -398,6 +398,10 @@ textarea {
     font-size: 1.5rem;
   }
 
+  #about img {
+    max-width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 320px){
