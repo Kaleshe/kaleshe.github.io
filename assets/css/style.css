@@ -1,5 +1,7 @@
 :root {
-  --main-colour: rgb(50 ,5 ,48);
+  --main-colour: rgb(20 ,5 ,18));
+  --main-colour-second: rgb(4, 1, 18);
+  --main-colour-third: rgb(114, 5, 109);
   --secondary-colour: #FFF;
 }
 
@@ -15,8 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: var(--secondary-colour);
-  background: linear-gradient(130deg, var(--main-colour) 0%,  var(--main-colour) 20%, #000a18 100%);
-  background-image: url('../img/city.svg'), linear-gradient(130deg, var(--main-colour) 0%,  var(--main-colour) 20%, #000a18 100%);
+  background-image: url('../img/city.svg'), linear-gradient(45deg, var(--main-colour-second) 20%, var(--main-colour) 80%, var(--main-colour-third) 115%);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   line-height: 1.7em;
@@ -32,7 +33,7 @@ main {
 
 .container {
   display: flex;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   align-items: center;
   height: 100%;
@@ -161,8 +162,12 @@ ul {
   transform: rotate(-45deg);
 }
 
-#about.container {
+#about {
   flex-direction: row;
+}
+
+#work {
+  width: auto!important;
 }
 
 #about img {
@@ -292,6 +297,7 @@ input, input::placeholder, textarea::placeholder, textarea {
   background-color: rgba(0, 0, 0, 0);
   font-weight: 200;
   font-family: roboto;
+  font-size: 1em;
 }
 
 input, textarea {
