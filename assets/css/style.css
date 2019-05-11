@@ -1,8 +1,10 @@
 :root {
-  --main-colour: rgb(20 ,5 ,18);
+  /* --main-colour: rgb(20 ,5 ,18); */
+  --main-colour: rgb(255 ,255 ,255);
   --main-colour-second: rgb(4, 1, 18);
   --main-colour-third: rgb(114, 5, 109);
-  --secondary-colour: #FFF;
+  --secondary-colour: #000;
+  --body-text: rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -17,12 +19,12 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: var(--secondary-colour);
-  background-image: url('../img/city.svg'), linear-gradient(45deg, var(--main-colour-second) 20%, var(--main-colour) 70%, var(--main-colour-third) 145%);
+  /* background-image: url('../img/city.svg'), linear-gradient(45deg, var(--main-colour-second) 20%, var(--main-colour) 70%, var(--main-colour-third) 145%); */
+  background-color: var(--main-colour);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   line-height: 1.7em;
   margin: 0;
-  padding: 1em;
   box-sizing: border-box;
   height: 100%;
 }
@@ -40,9 +42,14 @@ main {
   justify-content: center;
 }
 
+header .container {
+  width: 100%;
+  justify-content: space-around;
+}
+
 p {
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  color: var(--body-text);
   font-family: roboto;
   font-size: 1.2em;
 }
@@ -51,7 +58,6 @@ header span {
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
 }
 
 h1 {
@@ -62,14 +68,11 @@ h1 {
 
 h2 {
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--body-text);
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 3em;
+  border-bottom: .5px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav-transparent {
@@ -293,7 +296,7 @@ form {
 }
 
 input, input::placeholder, textarea::placeholder, textarea {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--body-text);
   background-color: rgba(0, 0, 0, 0);
   font-weight: 200;
   font-family: roboto;
