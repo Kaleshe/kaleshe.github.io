@@ -342,7 +342,7 @@ footer {
 
 @media screen and (max-width: 768px){
   .sub-menu li {
-    font-size: .5em;
+    font-size: .8em;
     color: rgba(255,255,255,0.8);
     font-weight: 500;
   }
