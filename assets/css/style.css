@@ -288,6 +288,11 @@ nav > ul > li:hover > .sub-menu {
     max-width: 700px;
   }
 
+  #contact .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .title {
     min-height: 20vh;
     display: flex;
@@ -299,6 +304,14 @@ nav > ul > li:hover > .sub-menu {
 /* Tablet */
 
 @media screen and (max-width: 768px){
+
+  #kaleshe-icon {
+    margin: 4em 0;
+  }
+  .contact {
+    text-align: center;
+  }
+
   .content {
     margin: 2em;
   }
