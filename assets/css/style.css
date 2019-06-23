@@ -86,6 +86,7 @@ img {
   left: 50%;
   transform: translate(-50%,-50%);
   width: 50px;
+  z-index: 100;
 }
 
 button, input[type="submit"] {
@@ -120,7 +121,7 @@ input[type="submit"] {
 }
 
 header {
-  margin: 2em 3em;
+  margin: 2em;
 }
 
 footer {
@@ -156,35 +157,30 @@ footer {
   clear: both;
 }
 
-/* Sub Meu */
+/* Hamburger */
 
-nav > ul {
+#hamburger {
+  width: 60px;
   position: relative;
 }
 
-nav > ul > li:hover > .sub-menu {
+.bar {
+  height: 7px;
+  background-color: var(--main-colour);
+  width: 100%;
   display: block;
 }
 
-.sub-menu {
-  display: none;
-  position: absolute;
-  background-color: rgba(0,0,0,0.8);
-  color: #FFF;
-  font-size: .9em;
-  top: 29px;
-  min-width: 200px;
-}
-
-.sub-menu a {
-  color: #FFF;
-}
-
-.sub-menu li {
-  font-weight: 400;
+.bar:nth-child(2n){
   margin: .5em 0;
-  display: block;
-  padding: 1em 2em;
+}
+
+.display-menu {
+  display: block
+}
+
+.close .bar {
+  background-color: #FFF;
 }
 
 /* WORK */
@@ -204,7 +200,8 @@ nav > ul > li:hover > .sub-menu {
 
   #hero .content {
     float: none;
-    margin: auto;
+    text-align: center;
+    margin: 4em auto;
     max-width: 677px;
   }
 
@@ -243,6 +240,10 @@ nav > ul > li:hover > .sub-menu {
 }
 
 @media screen and (min-width: 769px){
+
+  #hamburger {
+    display: none;
+  }
 
   #hero .container {
     margin: 8em auto 2em auto;
@@ -299,11 +300,56 @@ nav > ul > li:hover > .sub-menu {
     justify-content: center;
     align-items: center;
   }
+
+  /* Sub Meu */
+
+  nav > ul {
+    position: relative;
+  }
+
+  nav > ul > li:hover > .sub-menu {
+    display: block;
+  }
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    color: #FFF;
+    top: 29px;
+    min-width: 200px;
+    left: 180px;
+  }
+
+  .sub-menu a {
+    color: #FFF;
+  }
+
+  .sub-menu a:hover {
+    color: var(--main-colour);
+  }
+
+  .sub-menu li {
+    font-weight: 400;
+    margin: .5em 0;
+    display: block;
+    padding: 1em 2em;
+    font-size: .5em;
+  }
 }
 
 /* Tablet */
 
 @media screen and (max-width: 768px){
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
 
   #kaleshe-icon {
     margin: 4em 0;
@@ -337,10 +383,6 @@ nav > ul > li:hover > .sub-menu {
 
   nav a {
     color: #FFF;
-  }
-
-  #hero .content {
-    text-align: center;
   }
 
   .title {

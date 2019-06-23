@@ -1,17 +1,15 @@
 var hamburger = document.getElementById('hamburger');
-var mobileMenu = document.getElementById('mobile-menu');
+var menu = document.getElementById('menu');
 
-function menuToggle(){hamburger.addEventListener('click', function(){
-
-  if(!mobileMenu.classList.contains('display-menu')){
-    mobileMenu.style.display = "flex";
-    mobileMenu.classList.add('display-menu');
-    hamburger.classList.add('close-icon');
+function toggle(){
+  if (menu.classList != 'display-menu'){
+    menu.classList.add('display-menu');
+    hamburger.classList.add('close');
   } else {
-    mobileMenu.style.display = "none";
-    mobileMenu.classList.remove('display-menu');
-    hamburger.classList.remove('close-icon');
-  };
-});};
+    menu.classList.remove('display-menu');
+    hamburger.classList.remove('close');
+    console.log('working');
+  }
+}
 
-menuToggle();
+hamburger.addEventListener("click", toggle);
