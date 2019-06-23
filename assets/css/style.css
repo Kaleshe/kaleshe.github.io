@@ -355,6 +355,7 @@ footer {
 
   #hamburger {
     display: inline-block;
+    cursor: pointer;
   }
 
   #kaleshe-icon {
