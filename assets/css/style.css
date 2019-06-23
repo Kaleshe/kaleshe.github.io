@@ -78,6 +78,7 @@ img {
   height: 80px;
   position: relative;
   border-radius: 1em;
+  z-index: 100;
 }
 
 #logo img {
@@ -86,7 +87,6 @@ img {
   left: 50%;
   transform: translate(-50%,-50%);
   width: 50px;
-  z-index: 100;
 }
 
 button, input[type="submit"] {
@@ -334,13 +334,19 @@ footer {
     margin: .5em 0;
     display: block;
     padding: 1em 2em;
-    font-size: .5em;
+    font-size: .9em;
   }
 }
 
 /* Tablet */
 
 @media screen and (max-width: 768px){
+  .sub-menu li {
+    font-size: .5em;
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -371,14 +377,22 @@ footer {
     align-items: center;
     justify-content: center;
     position: absolute;
-    background-color: var(--main-colour);
+    background-color: rgba(0,0,0,0.95);
     color: #FFF;
     height: 100%;
-    width: 100%;
     top: 0;
+    width: 100%;
     left: 0;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
+  }
+
+  nav > ul > li {
+    margin: .3em 0;
+  }
+
+  nav > ul {
+    margin: 4em 0 1em 0;
   }
 
   nav a {
