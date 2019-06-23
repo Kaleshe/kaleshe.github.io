@@ -171,6 +171,19 @@ footer {
   background-color: #FFF;
 }
 
+.title {
+  min-height: 30vh;
+  display: flex;
+}
+
+.title h1 {
+  margin: auto;
+}
+
+.content {
+  margin: 1em;
+}
+
 /* WORK */
 
 /* Glo */
@@ -178,9 +191,29 @@ footer {
 .glo {
   color: #FFF;
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/glo-mobile-and-laptop.jpg') no-repeat center / cover;
-  text-align: center;
 }
 
+/* Pearson x Audible */
+
+.pxa {
+  color: #FFF;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/billboard-mockup.jpg') no-repeat 50% 35%/ cover;
+}
+
+/* Mublo */
+
+.mublo {
+  color: #FFF;
+  background: #8247FF;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.top {
+  object-position: top;
+}
 
 
 @media screen and (max-width: 1276px){
@@ -244,7 +277,7 @@ footer {
     max-width: 1344px;
   }
 
-  h1 {
+  #hero h1 {
     margin: .2em 0;
     font-size: 3.1em;
   }
@@ -284,12 +317,7 @@ footer {
     justify-content: space-between;
   }
 
-  .title {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
 
   /* Sub Meu */
 
@@ -395,7 +423,4 @@ footer {
     color: #FFF;
   }
 
-  .title {
-    padding: 2em 0;
-  }
 }
