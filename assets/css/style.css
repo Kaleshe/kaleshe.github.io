@@ -391,6 +391,10 @@ footer {
     display: inline-block;
   }
 
+  nav {
+    z-index: 100;
+  }
+
   nav ul li {
     margin-left: 2.8em;
   }
