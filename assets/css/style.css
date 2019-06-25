@@ -441,17 +441,20 @@ nav, #hamburger {
   }
 
   nav > ul > li:hover > .sub-menu {
-    display: block;
+    opacity: 1;
+    z-index: 1
   }
 
   .sub-menu {
-    display: none;
     position: absolute;
     background-color: rgba(0,0,0,0.8);
     color: #FFF;
     top: 29px;
     min-width: 200px;
     left: 180px;
+    z-index: -1;
+    opacity: 0;
+    transition: .4s ease-in;
   }
 
   .sub-menu a {
