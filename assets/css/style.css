@@ -378,6 +378,10 @@ nav, #hamburger {
   .col-2 .content {
     max-width: 45%;
   }
+
+  .content {
+    margin: 2em;
+  }
 }
 
 @media screen and (min-width: 769px){
@@ -518,10 +522,6 @@ nav, #hamburger {
   #hamburger {
     display: inline-block;
     cursor: pointer;
-  }
-
-  .content {
-    margin: 2em;
   }
 
   #hero .content {
