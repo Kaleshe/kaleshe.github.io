@@ -230,10 +230,6 @@ nav, #hamburger {
   z-index: 100;
 }
 
-#logo {
-  z-index: 200;
-}
-
 .close .bar {
   background-color: #FFF;
 }
