@@ -442,7 +442,8 @@ nav, #hamburger {
 
   nav > ul > li:hover > .sub-menu {
     opacity: 1;
-    z-index: 1
+    overflow: auto;
+    height: auto;
   }
 
   .sub-menu {
@@ -452,8 +453,9 @@ nav, #hamburger {
     top: 29px;
     min-width: 200px;
     left: 180px;
-    z-index: -1;
     opacity: 0;
+    overflow: hidden;
+    height: 0;
     transition: .4s ease-in;
   }
 
