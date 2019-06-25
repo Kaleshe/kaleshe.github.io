@@ -268,7 +268,7 @@ nav, #hamburger {
   object-position: top;
 }
 
-/* @media screen and (max-width: 1316px){
+@media screen and (max-width: 1316px){
   .container {
     max-width: 800px;
   }
@@ -289,7 +289,7 @@ nav, #hamburger {
   #contact .container {
     margin: 1em;
   }
-} */
+}
 
 @media screen and (min-width: 1000px){
   .title {
