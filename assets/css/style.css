@@ -457,6 +457,10 @@ nav, #hamburger {
     transition: .4s ease-in;
   }
 
+  nav > ul > li:hover > a:first-of-type {
+    color: var(--main-colour)!important;
+  }
+
   .sub-menu a {
     color: #FFF;
   }
