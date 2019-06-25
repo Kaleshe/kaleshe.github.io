@@ -228,7 +228,6 @@ nav, #hamburger {
 /* Titles */
 
 .title {
-  min-height: 30vh;
   display: flex;
 }
 
@@ -237,28 +236,33 @@ nav, #hamburger {
 }
 
 .about {
-  background: #000;
+  background: #F89938;
   color: #FFF;
 }
 
 .glo {
   color: #FFF;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/glo-mobile-and-laptop.jpg') no-repeat center / cover;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../img/glo-mobile-and-laptop.jpg') no-repeat center / cover;
 }
 
 .pxa {
   color: #FFF;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/billboard-mockup.jpg') no-repeat 50% 35%/ cover;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../img/billboard-mockup.jpg') no-repeat 50% 35%/ cover;
 }
 
 .contact {
   color: #FFF;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../img/contact-us.png') no-repeat 50% 65%/ cover;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../img/contact-us.png') no-repeat 50% 65%/ cover;
 }
 
 .mublo {
   color: #FFF;
   background: #8247FF;
+}
+
+.fe {
+  background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('../img/svg/fe-bubbles.svg') no-repeat center/ 40%;
+  color: #FFF;
 }
 
 .contain {
@@ -292,6 +296,12 @@ nav, #hamburger {
   }
 }
 
+@media screen and (min-width: 1000px){
+  .title {
+    min-height: 30vh;
+  }
+}
+
 @media screen and (min-width: 999px){
   #contact .container {
     display: flex;
@@ -301,6 +311,12 @@ nav, #hamburger {
 
   #contact-info {
     max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 999px){
+  .title {
+    min-height: 250px;
   }
 }
 
