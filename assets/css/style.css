@@ -199,10 +199,27 @@ footer {
   background-color: var(--main-colour);
   width: 100%;
   display: block;
+  transition: .2s ease-in-out;
 }
 
 .bar:nth-child(2n){
   margin: .3em 0;
+}
+
+.close .bar:first-of-type {
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: 6px;
+}
+
+.close .bar:last-of-type {
+  position: absolute;
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+.close .bar:nth-child(2n){
+  opacity: 0;
 }
 
 .display-menu {
@@ -516,20 +533,31 @@ nav, #hamburger {
   }
 
   nav {
-    display: none; /* flex */
     align-items: center;
     justify-content: center;
     position: absolute;
     background-color: rgba(0,0,0,0.95);
     color: #FFF;
-    min-height: 100%;
-    height: auto;
+    height: 0;
+    overflow: hidden;
+
     top: 0;
     width: 100%;
     left: 0;
     font-size: 2em;
+    transition: .8s ease-in-out;
     text-align: center;
   }
+
+  nav.display-menu{
+    position: fixed;
+    height: 100%;
+  }
+
+  #hamburger.close {
+  position: fixed;
+  right: 1em;
+}
 
   nav > ul {
     margin: 3em 0 1em 0;
