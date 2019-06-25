@@ -283,7 +283,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 999px){
   #contact .container {
     display: flex;
     justify-content: space-between;
@@ -295,7 +295,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 998px){
   form {
     margin: auto;
   }
@@ -303,15 +303,12 @@ footer {
   #contact h2 {
     text-align: center;
   }
-}
 
-@media screen and (max-width: 880px){
   #contact-info {
     max-width: 500px;
-    margin: 4em auto;
+    margin: 2em auto;
   }
 }
-
 
 @media screen and (min-width: 859px){
 
@@ -400,7 +397,7 @@ footer {
   }
 
   #kaleshe-icon {
-    height: 400px;
+    height: 200px;
   }
 
   /* Sub Meu */
