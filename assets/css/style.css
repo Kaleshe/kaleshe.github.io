@@ -231,7 +231,7 @@ nav, #hamburger {
 }
 
 .about {
-  background: #F89938;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../img/kav-branding-stationary.jpg') no-repeat center/ cover;
   color: #FFF;
 }
 
