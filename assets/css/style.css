@@ -362,7 +362,7 @@ nav, #hamburger {
   }
 
   .margin, .col-2 {
-    margin: 8% 0;
+    margin: 8% 0!important;
   }
 
   .col-2:nth-child(2n){
