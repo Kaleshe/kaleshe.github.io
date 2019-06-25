@@ -213,8 +213,12 @@ footer {
   display: block
 }
 
-nav, #logo, #hamburger {
+nav, #hamburger {
   z-index: 100;
+}
+
+#logo {
+  z-index: 200;
 }
 
 .close .bar {
