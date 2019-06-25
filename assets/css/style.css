@@ -467,7 +467,7 @@ nav, #hamburger {
 
   .sub-menu li {
     font-weight: 400;
-    margin: .5em 0;
+    margin: .3em 0;
     display: block;
     padding: 1em 2em;
     font-size: .9em;
@@ -500,13 +500,14 @@ nav, #hamburger {
 
   li {
     font-size: .9em;
+    margin: .5em 0;
   }
 
   .sub-menu li {
     font-size: .7em;
     color: rgba(255,255,255,0.8);
     font-weight: 500;
-    margin: .4em 0;
+    margin: .7em 0;
   }
 
   header {
@@ -539,13 +540,11 @@ nav, #hamburger {
     color: #FFF;
     height: 0;
     overflow: hidden;
-
     top: 0;
     width: 100%;
     left: 0;
     font-size: 2em;
     transition: .8s ease-in-out;
-    text-align: center;
   }
 
   nav.display-menu{
@@ -554,12 +553,13 @@ nav, #hamburger {
   }
 
   #hamburger.close {
-  position: fixed;
-  right: 1em;
-}
+    position: fixed;
+    right: 1em;
+  }
 
   nav > ul {
-    margin: 3em 0 1em 0;
+    max-width: 211px;
+    margin: 3em auto 1em auto;
   }
 
   nav a {
