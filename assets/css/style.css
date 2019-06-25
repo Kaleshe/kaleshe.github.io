@@ -106,7 +106,6 @@ img {
   height: 80px;
   position: relative;
   border-radius: 1em;
-  z-index: 100;
 }
 
 #logo img {
@@ -143,7 +142,6 @@ ul {
 form {
   position: relative;
   max-width: 500px;
-  z-index: -1;
 }
 
 input[type="submit"] {
@@ -213,6 +211,10 @@ footer {
 
 .display-menu {
   display: block
+}
+
+nav, #logo, #hamburger {
+  z-index: 100;
 }
 
 .close .bar {
@@ -388,10 +390,6 @@ footer {
 
   #logo, nav, nav ul li {
     display: inline-block;
-  }
-
-  nav {
-    z-index: 100;
   }
 
   nav ul li {
