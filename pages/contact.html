@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
     </head>
 
-<body class="contact">
+<body id="contact">
 
 <header>
 
@@ -40,7 +40,6 @@
             <a href="glo.html"><li>Glo</li></a>
             <a target="_blank" href="https://www.behance.net/gallery/69228399/Filter-Escape/fe.html"><li>Filter Escape</li></a>
             <a href="pxa.html"><li>Pearson x Audible</li></a>
-            <a href="mublo.html"><li>Mublo</li></a>
             <a target="_blank" href="https://www.behance.net/gallery/57410479/The-many-bits-of-Kaleshe"><li>Many Bits of Kaleshe</li></a>
           </ul>
         </li></a>
@@ -49,44 +48,42 @@
     </nav>
 
     <div id="hamburger">
-      <div class="bar">
-      </div>
-      <div class="bar">
-      </div>
-      <div class="bar">
-      </div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
 
 </header>
 
-<div class="title">
+<div class="contact title">
   <h1>Contact</h1>
 </div>
 
 <main>
 
-  <section id="contact">
     <div class="container">
+      <section class="margin">
+        <h2>Let's work together</h2>
 
-      <h2>Let's work together</h2>
+          <form name="input" method="POST" action="https://formspree.io/contact@kaleshe.co.uk" method="post">
+            <input type="text" name="Name" placeholder="Your name">
+            <input type="email" name="_replyto" placeholder="Your email">
+            <textarea name="message" placeholder="Type your message"></textarea>
+            <input class="orange" type="submit" value="Send">
+            <input type="hidden" name="_next" value="thanks.html">
+            <img src="../assets/img/svg/kaleshe-icon.svg" alt="" id="kaleshe-icon">
+          </form>
+      </section>
 
-      <div class="content">
-        <form name="input" method="POST" action="https://formspree.io/contact@kaleshe.co.uk" method="post">
-          <input type="text" name="Name" placeholder="Your name">
-          <input type="email" name="_replyto" placeholder="Your email">
-          <textarea name="message" placeholder="Type your message"></textarea>
-          <input type="submit" value="Send">
-          <input type="hidden" name="_subject" value="Enter your subject here"/>
-          <input type="hidden" name="_next" value="thanks.html">
-        </form>
-
-        <img src="../assets/img/svg/kaleshe-icon.svg" alt="" id="kaleshe-icon">
-      </div>
-
+      <section id="contact-info">
+        <h3>Want to discuss an upcoming project?</h3>
+        <p>Whether it be branding, graphic design or web design. I've got you covered. Just send me a message and I'll see how I can help.</p>
+        <h4>Email</h4>
+        <p>contact@kaleshe.co.uk</p>
+        <h4>Call</h4>
+        <p>0771 0539 582</p>
+      </section>
     </div>
-  </section>
-
-
 
 </main>
 
