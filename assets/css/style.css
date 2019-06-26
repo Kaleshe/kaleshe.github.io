@@ -554,7 +554,7 @@ nav, #hamburger {
     width: 100%;
     left: 0;
     font-size: 2em;
-    transition: .8s ease-in-out;
+    transition: .4s ease-in-out;
   }
 
   nav.display-menu{
