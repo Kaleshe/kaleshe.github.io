@@ -1,0 +1,19 @@
+---
+title: Contact
+layout:  layouts/default.njk
+---
+
+<section>
+    <form name="input" method="POST" action="https://formspree.io/contact@kaleshe.co.uk" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name">
+      <label for="email">Email:</label>
+      <input type="email" name="_replyto">
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone">
+      <label for="message">Message:</label>
+      <textarea name="message"></textarea>
+      <input class="button button__form" type="submit" value="Send">
+      <input type="hidden" name="_next" value="thanks">
+    </form>
+</section>

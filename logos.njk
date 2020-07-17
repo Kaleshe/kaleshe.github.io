@@ -1,0 +1,14 @@
+---
+title: Logos
+layout:  layouts/default
+---
+
+<section>
+    <div class="logos grid">
+       {% for logo in logos %}
+         <div>
+            <img src="../assets/img/logos/{{ logo.logoUrl }}">
+         </div>
+       {% endfor %}
+    </div>
+</section>
