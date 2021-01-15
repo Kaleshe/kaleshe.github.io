@@ -193,7 +193,9 @@ button, .button {
    padding: 15px 2em;
    cursor: pointer;
    color: inherit;
+   font-weight: 800;
    font-size: .9em;
+   transition: all ease-in .2s;
 }
 
 p + button, p + .button {
@@ -207,14 +209,14 @@ p + button, p + .button {
 }
 
 .button__standard {
-   font-weight: 800;
    letter-spacing: -.5px;
    border: 3px solid var(--black);
 }
 
-.button__standard:hover {
+.button:hover, button:hover {
    border-color: var(--main-colour);
    color: var(--main-colour);
+   background-color: var(--c-white);
 }
 
 #hamburger {
