@@ -1,6 +1,7 @@
 :root {
    --main-colour: #E6391D;
    --black: #151414;
+   --c-white: white;
    --dark-grey: #7C7E82;
    --lighter-grey: #999A9C;
    --header-font: 'poppins', sans-serif;
@@ -78,7 +79,7 @@ main {
    margin: 0 auto;
 }
 
-.container {
+.container, main > section {
    padding: 2em;
 }
 
@@ -102,6 +103,12 @@ header[role="banner"] .container {
 
 body.project h1 {
    margin-bottom: .5em;
+}
+
+.single-project img {
+   box-shadow: 0 2.5px 10px rgba(27,27,41,.05),
+   0 5px 30px rgba(27,27,41,.03),
+   0 20px 60px rgba(27, 27, 41, 0.02)!important;
 }
 
 /* Projects Grid */
@@ -134,8 +141,8 @@ footer {
    text-align: center;
 }
 
-footer .container {
-   padding-top: 6em;
+footer .container, .cta {
+  margin-top: 2rem;
 }
 
 /* Contact */
@@ -186,8 +193,11 @@ button, .button {
    padding: 15px 2em;
    cursor: pointer;
    color: inherit;
-   margin-top: 1em;
    font-size: .9em;
+}
+
+p + button, p + .button {
+   margin-top: 1em;
 }
 
 .button__form, .button__colour {
@@ -394,6 +404,9 @@ button, .button {
       transform: rotate(-45deg);
       top: -15px
    }
+}
+
+.cta {
 }
 
 /* Reset */
